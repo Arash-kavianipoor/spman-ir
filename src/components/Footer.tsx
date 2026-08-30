@@ -29,24 +29,22 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 space-y-4">
             <div 
               onClick={(e) => handleLinkClick(e, 'about')}
-              className="flex items-center gap-3 cursor-pointer group inline-flex"
+              className="flex items-center gap-3.5 sm:gap-4 cursor-pointer group inline-flex"
             >
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500/30 to-orange-500/30 p-[1px] border border-amber-500/30 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-all">
-                <div className="w-full h-full bg-[#0d0f17] rounded-[15px] p-1.5 flex items-center justify-center overflow-hidden">
-                  <img
-                    src="/logo-compact.png"
-                    alt="لوگوی اسپرت من"
-                    className="w-full h-full object-contain filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
-                    loading="lazy"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
+              <div className="relative flex items-center justify-center">
+                <img
+                  src="/logo-compact.png"
+                  alt="لوگوی اسپرت من"
+                  className="w-14 h-14 sm:w-18 sm:h-18 object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.3)] group-hover:scale-105 group-hover:drop-shadow-[0_6px_18px_rgba(245,158,11,0.5)] transition-all duration-300"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
               </div>
-              <div>
-                <span className="text-xl font-black text-white block group-hover:text-amber-400 transition-colors">
+              <div className="flex flex-col justify-center">
+                <span className="text-xl sm:text-2xl font-black text-white block group-hover:text-amber-400 transition-colors">
                   spman<span className="text-amber-400">.ir</span>
                 </span>
-                <span className="text-[11px] text-zinc-400 font-medium block">
+                <span className="text-xs sm:text-sm text-zinc-400 font-medium block">
                   Sport Man Iran • سامانه جامع اسپرت من
                 </span>
               </div>

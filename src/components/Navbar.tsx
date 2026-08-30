@@ -28,38 +28,33 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, activeSection }) => 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* 1. Left Brand / Logo: اسپرت من (Sport Man) with Compact Optimized Logo */}
+          {/* 1. Left Brand / Logo: اسپرت من (Sport Man) Frameless & Larger */}
           <div 
             onClick={() => handleNavClick('hero')}
-            className="flex items-center gap-3 cursor-pointer group"
+            className="flex items-center gap-3 sm:gap-4 cursor-pointer group py-1"
           >
-            {/* Optimized Compact Logo Image */}
+            {/* Frameless & Larger Logo Image for both Mobile & Desktop */}
             <div className="relative flex items-center justify-center">
-              <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-500/40 via-white/10 to-orange-500/40 p-[1.5px] shadow-lg shadow-amber-500/25 group-hover:shadow-amber-500/40 group-hover:scale-105 transition-all duration-300">
-                <div className="w-full h-full bg-[#0d0f17] rounded-[14px] p-1.5 flex items-center justify-center overflow-hidden relative">
-                  <img
-                    src="/logo-compact.png"
-                    alt="لوگوی اسپرت من"
-                    className="w-full h-full object-contain filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
-                    loading="eager"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-              </div>
-              <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-amber-400 rounded-full border-2 border-[#07080b] shadow-[0_0_8px_#f59e0b] animate-pulse" />
+              <img
+                src="/logo-compact.png"
+                alt="لوگوی اسپرت من"
+                className="w-13 h-13 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:drop-shadow-[0_6px_20px_rgba(245,158,11,0.6)] transition-all duration-300"
+                loading="eager"
+                referrerPolicy="no-referrer"
+              />
             </div>
 
             {/* Brand Typography (اسپرت من) */}
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="text-xl sm:text-2xl font-black tracking-tight text-white group-hover:text-amber-400 transition-colors">
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-white group-hover:text-amber-400 transition-colors leading-tight">
                   اسپرت من
                 </span>
-                <span className="text-[10px] font-black px-1.5 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/30 text-amber-400 tracking-wider">
+                <span className="text-[10px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/30 text-amber-400 tracking-wider">
                   PRO
                 </span>
               </div>
-              <span className="text-[10px] text-zinc-400 font-mono tracking-[0.2em] uppercase -mt-0.5 group-hover:text-zinc-300 transition-colors">
+              <span className="text-[10px] sm:text-xs text-zinc-400 font-mono tracking-[0.2em] uppercase mt-0.5 group-hover:text-zinc-300 transition-colors">
                 SPORTMAN.IR
               </span>
             </div>

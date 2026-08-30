@@ -54,19 +54,14 @@ export const AboutUsPage: React.FC<AboutUsPageProps> = ({
 
           {/* Full-Res Original Master Logo */}
           <div className="relative z-10 flex flex-col items-center justify-center space-y-6">
-            <div className="relative p-2 rounded-3xl bg-gradient-to-tr from-amber-500/30 via-white/10 to-orange-500/30 border border-amber-500/30 shadow-[0_12px_40px_rgba(245,158,11,0.25)]">
-              <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-2xl bg-[#07080d] p-3 flex items-center justify-center overflow-hidden shadow-inner">
-                <img
-                  src="/logo-full.png"
-                  alt="لوگوی رسمی اسپرت من (Sport Man)"
-                  className="w-full h-full object-contain filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.8)]"
-                  loading="eager"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="absolute -bottom-3 -right-3 w-8 h-8 rounded-full bg-amber-500 text-black flex items-center justify-center font-black shadow-lg">
-                <Sparkles className="w-4 h-4" />
-              </div>
+            <div className="relative flex items-center justify-center">
+              <img
+                src="/logo-full.png"
+                alt="لوگوی رسمی اسپرت من (Sport Man)"
+                className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain filter drop-shadow-[0_12px_32px_rgba(245,158,11,0.4)] hover:scale-105 transition-transform duration-300"
+                loading="eager"
+                referrerPolicy="no-referrer"
+              />
             </div>
 
             <div className="space-y-3 max-w-2xl mx-auto">

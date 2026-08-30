@@ -1,8 +1,8 @@
 [
   {
-    "id": "store-1",
-    "name": "فروشگاه ورزشی المپیک اسپرت (مرکزی)",
-    "slug": "olympic-sport-center",
+    "id": "store-sport-1",
+    "name": "فروشگاه ورزشی المپیک اسپرت (مرکزی منیریه)",
+    "slug": "olympic-sport-moniriyeh",
     "category": "تجهیزات بدنسازی، دمبل و دوچرخه",
     "city": "تهران",
     "area": "میدان منیریه",
@@ -23,9 +23,9 @@
     },
     "website": "https://olympicsport.ir",
     "images": [
+      "/assets/images/sports_equipment_store_1788108231956.jpg",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
     ],
     "description": "مرکز پخش و توزیع تخصصی انواع دمبل متغیر و ثابت، میله هالتر، کش ورزشی پاورباند، میله بارفیکس چندمنظوره، دستگاه تقویت مچ و تجهیزات حرفه‌ای بدنسازی با ارسال سراسری.",
     "workingHours": "شنبه تا پنج‌شنبه: ۹:۳۰ الی ۲۱:۳۰ | جمعه: ۱۰:۰۰ الی ۱۶:۰۰",
@@ -34,9 +34,9 @@
     "reviewCount": 142
   },
   {
-    "id": "store-2",
-    "name": "فروشگاه تخصصی دوچرخه و اقلام دوچرخه‌سواری جاینت استور",
-    "slug": "giant-bicycle-store",
+    "id": "store-sport-2",
+    "name": "فروشگاه تخصصی دوچرخه جاینت استور شریعتی",
+    "slug": "giant-bicycle-store-shariati",
     "category": "دوچرخه، اقلام دوچرخه‌سواری و قطعات",
     "city": "تهران",
     "area": "خیابان شریعتی",
@@ -57,19 +57,19 @@
     },
     "website": "https://giantstore-tehran.com",
     "images": [
+      "/assets/images/cyclist_hero_velmont_1788013387338.jpg",
       "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?q=80&w=1000&auto=format&fit=crop"
+      "/assets/images/cyclist_motion_card_1788013401900.jpg"
     ],
-    "description": "نمایندگی رسمی دوچرخه‌های کورسی، کوهستان، شهری و برقی. عرضه انواع اقلام دوچرخه‌سواری شامل کلاه ایمنی استاندارد، دستکش ژله‌ای، عینک یووی۴۰۰، چراغ‌های شارژی و قمقمه تخصصی.",
+    "description": "نمایندگی رسمی دوچرخه‌های کورسی، کوهستان، شهری و برقی برند جاینت و ویوا. عرضه کلاه ایمنی استاندارد، دستکش ژله‌ای، عینک یووی۴۰۰ و قطعات شیمانو.",
     "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
     "featured": true,
     "rating": 4.8,
     "reviewCount": 98
   },
   {
-    "id": "store-3",
-    "name": "فروشگاه تجهیزات تناسب اندام پاور جیم",
+    "id": "store-sport-3",
+    "name": "فروشگاه تجهیزات تناسب اندام پاور جیم شیراز",
     "slug": "power-gym-shiraz",
     "category": "دمبل، کش ورزشی، بارفیکس و کراس‌فیت",
     "city": "شیراز",
@@ -91,19 +91,19 @@
     },
     "website": "https://powergymshiraz.ir",
     "images": [
+      "/assets/images/sports_equipment_store_1788108231956.jpg",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop"
     ],
-    "description": "فروش مستقیم تجهیزات تناسب اندام خانگی و باشگاهی، ست دمبل‌های شش‌ضلعی روکش‌دار، کش‌های پیلاتس لوپ و مینی‌لوپ، میله بارفیکس چندکاره، دستگاه‌های فنری تقویت مچ دست و کمربند چرم بدنسازی.",
+    "description": "فروش مستقیم تجهیزات تناسب اندام خانگی و باشگاهی، ست دمبل‌های شش‌ضلعی روکش‌دار، کش‌های پیلاتس لوپ، میله بارفیکس چندکاره، دستگاه‌های فنری تقویت مچ دست و کمربند چرم بدنسازی.",
     "workingHours": "شنبه تا پنج‌شنبه: ۹:۰۰ الی ۲۱:۰۰",
     "featured": true,
     "rating": 4.9,
     "reviewCount": 85
   },
   {
-    "id": "store-4",
-    "name": "فروشگاه کوهنوردی و ورزشی زاگرس اسپرت",
+    "id": "store-sport-4",
+    "name": "فروشگاه کوهنوردی و ورزشی زاگرس اسپرت اصفهان",
     "slug": "zagros-sport-isfahan",
     "category": "کوهنوردی، کمپینگ و پوشاک ورزشی",
     "city": "اصفهان",
@@ -125,9 +125,9 @@
     },
     "website": "https://zagrossport.com",
     "images": [
+      "/assets/images/sportswear_accessories_1788108259695.jpg",
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop"
     ],
     "description": "تخصصی‌ترین هایپرورزشی مرکز کشور برای کوله‌پشتی‌های کوهنوردی، باتوم، کتونی‌های تخصصی دویدن، دستکش‌های ورزشی، قمقمه و فلاسک‌های استیل و تجهیزات تمرین در ارتفاع.",
     "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۱:۳۰",
@@ -136,8 +136,8 @@
     "reviewCount": 64
   },
   {
-    "id": "store-5",
-    "name": "فروشگاه مدرن ورزشی هیرمند (شعبه مشهد)",
+    "id": "store-sport-5",
+    "name": "فروشگاه مدرن ورزشی هیرمند اسپرت مشهد",
     "slug": "hirmand-sports-mashhad",
     "category": "دستگاه‌های هوازی، تردمیل و یوگا",
     "city": "مشهد",
@@ -159,9 +159,9 @@
     },
     "website": "https://hirmandsports.ir",
     "images": [
+      "/assets/images/female_stretching_mat_1788014368101.jpg",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop"
     ],
     "description": "فروش انواع تردمیل‌های خانگی و باشگاهی، دوچرخه ثابت اسپینینگ، مت و فوم رولر یوگا، طناب‌های سرعتی بلبرینگی، کش‌های مقاومتی تی‌آر‌ایکس و شیکرهای بدنسازی هوشمند.",
     "workingHours": "شنبه تا پنج‌شنبه: ۹:۳۰ الی ۲۲:۰۰",
@@ -170,8 +170,8 @@
     "reviewCount": 110
   },
   {
-    "id": "store-6",
-    "name": "فروشگاه رزم و ورزش البرز اسپرت",
+    "id": "store-sport-6",
+    "name": "فروشگاه رزم و ورزش البرز اسپرت کرج",
     "slug": "alborz-sport-karaj",
     "category": "هنرهای رزمی، دستکش بوکس و میت",
     "city": "کرج",
@@ -191,11 +191,11 @@
       "telegram": "https://t.me/alborz_sport_karaj",
       "instagram": "https://instagram.com/alborz_sport_official"
     },
-    "website": "https://alborzs瑩sport.ir",
+    "website": "https://alborzsport.ir",
     "images": [
+      "/assets/images/sports_equipment_store_1788108231956.jpg",
       "https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1000&auto=format&fit=crop"
     ],
     "description": "تجهیزات ورزش‌های رزمی، بوکس، تی‌آر‌ایکس، دستکش چرم اورجینال، کیسه بوکس آویز و ایستاده، میله بارفیکس و گیره‌های کششی تمرینی.",
     "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۱:۰۰",
@@ -204,8 +204,8 @@
     "reviewCount": 53
   },
   {
-    "id": "store-7",
-    "name": "مجموعه ورزشی و باشگاه تخصصی بدنسازی تیتان",
+    "id": "store-sport-7",
+    "name": "مجموعه ورزشی و باشگاه تخصصی بدنسازی تیتان تهران",
     "slug": "titan-gym-tehran",
     "category": "باشگاه‌های ورزشی (بدنسازی، فیتنس، کراس‌فیت و پیلاتس)",
     "city": "تهران",
@@ -227,20 +227,463 @@
     },
     "website": "https://titangym.ir",
     "images": [
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
+      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
     ],
-    "description": "مجهزترین باشگاه بدنسازی و فیتنس VIP با جدیدترین دستگاه‌های DHZ و تکنو جیم، سالن مجزای کراس‌فیت و تی‌آر‌ایکس، بوفه سلامت، سونا و جکوزی با حضور مربیان رسمی فدراسیون و سانس‌های اختصاصی بانوان و آقایان.",
+    "description": "مجهزترین باشگاه بدنسازی و فیتنس VIP با جدیدترین دستگاه‌های DHZ و تکنو جیم، سالن مجزای کراس‌فیت و تی‌آر‌ایکس، بوفه سلامت، سونا و جکوزی با حضور مربیان رسمی فدراسیون.",
     "workingHours": "بانوان: ۸:۰۰ الی ۱۴:۳۰ | آقایان: ۱۵:۰۰ الی ۲۳:۳۰",
     "featured": true,
     "rating": 4.9,
     "reviewCount": 168
   },
   {
-    "id": "store-8",
-    "name": "داروخانه و فروشگاه تخصصی مکمل‌های ورزشی پروتئین کینگ",
-    "slug": "protein-king-supplements",
+    "id": "store-sport-8",
+    "name": "فروشگاه تجهیزات بدنسازی رزم‌آرا منیریه",
+    "slug": "razmara-sport-moniriyeh",
+    "category": "تجهیزات بدنسازی، دمبل و دستگاه‌های ورزشی",
+    "city": "تهران",
+    "area": "میدان منیریه",
+    "address": "تهران، خیابان ولیعصر، نرسیده به میدان منیریه، پلاک ۸۵۰",
+    "phones": {
+      "mobile1": "09123456781",
+      "mobile2": "09353456781",
+      "landline": "02155374422"
+    },
+    "coordinates": {
+      "lat": 35.6834,
+      "lng": 51.4010
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989123456781",
+      "telegram": "https://t.me/razmara_sport",
+      "instagram": "https://instagram.com/razmarasport"
+    },
+    "website": "https://razmarasport.com",
+    "images": [
+      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "تولید و توزیع انواع سازه‌های کراس فیت، نیمکت‌های چندحالته بدنسازی، رک اسکوات، وزنه‌های هالتر فرمانی و دمبل‌های سنگین باشگاهی با گارانتی تعویض.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۹:۰۰ الی ۲۱:۰۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 78
+  },
+  {
+    "id": "store-sport-9",
+    "name": "فروشگاه دوچرخه و کوهستان اسکات ایران (Scott Iran)",
+    "slug": "scott-iran-bicycle",
+    "category": "دوچرخه، اقلام دوچرخه‌سواری و قطعات",
+    "city": "تهران",
+    "area": "شهرک غرب",
+    "address": "تهران، شهرک غرب، بلوار دادمان، نبش خیابان درختی، مجتمع تجاری خلیج فارس، واحد ۴",
+    "phones": {
+      "mobile1": "09123001234",
+      "mobile2": "09193001234",
+      "landline": "02188081234"
+    },
+    "coordinates": {
+      "lat": 35.7601,
+      "lng": 51.3684
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989123001234",
+      "telegram": "https://t.me/scott_iran_official",
+      "instagram": "https://instagram.com/scott_iran"
+    },
+    "website": "https://scott-iran.com",
+    "images": [
+      "/assets/images/cyclist_hero_velmont_1788013387338.jpg",
+      "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/cyclist_motion_card_1788013401900.jpg"
+    ],
+    "description": "عرضه‌کننده رسمی دوچرخه‌های سوئیسی اسکات، لباس‌های آیرودینامیک، کفش‌های فیکس رکاب، تلمبه‌های حرفه‌ای و تجهیزات سرویس دوره‌ای دوچرخه.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 115
+  },
+  {
+    "id": "store-sport-10",
+    "name": "باشگاه و مجموعه تناسب اندام سام فیت (Sam Fit)",
+    "slug": "sam-fit-andarzgoo",
+    "category": "باشگاه‌های ورزشی (بدنسازی، فیتنس، کراس‌فیت و پیلاتس)",
+    "city": "تهران",
+    "area": "اندرزگو",
+    "address": "تهران، فرمانیه، بلوار اندرزگو، روبروی بلوار کاوه، پلاک ۴۶",
+    "phones": {
+      "mobile1": "09121008822",
+      "mobile2": "09301008822",
+      "landline": "02126105500"
+    },
+    "coordinates": {
+      "lat": 35.8012,
+      "lng": 51.4556
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989121008822",
+      "telegram": "https://t.me/samfit_club",
+      "instagram": "https://instagram.com/samfit.club"
+    },
+    "website": "https://samfitclub.ir",
+    "images": [
+      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+    ],
+    "description": "باشگاه پریمیوم فیتنس شمال تهران با جدیدترین لاین دستگاه‌های ماتریس آمریکا، فضای تخصصی تمرینات فانکشنال، آنالیز اینبادی رایگان و برنامه تمرینی اختصاصی.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۶:۳۰ الی ۲۳:۳۰ | جمعه‌ها: ۱۰:۰۰ الی ۱۸:۰۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 195
+  },
+  {
+    "id": "store-sport-11",
+    "name": "فروشگاه تجهیزات ورزشی پویا اسپرت تبریز",
+    "slug": "pouya-sport-tabriz",
+    "category": "تجهیزات بدنسازی، دمبل و دوچرخه",
+    "city": "تبریز",
+    "area": "خیابان امام خمینی",
+    "address": "تبریز، خیابان امام خمینی، روبروی مصلی اعظم، نبش پاساژ سهند، واحد ۱۸",
+    "phones": {
+      "mobile1": "09141154321",
+      "mobile2": "09331154321",
+      "landline": "04135567890"
+    },
+    "coordinates": {
+      "lat": 38.0722,
+      "lng": 46.2941
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989141154321",
+      "telegram": "https://t.me/pouyasport_tabriz",
+      "instagram": "https://instagram.com/pouya.sport.tabriz"
+    },
+    "website": "https://pouyasport.ir",
+    "images": [
+      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "بزرگترین فروشگاه لوازم ورزشی شمال غرب کشور، توزیع انواع دمبل، میله بارفیکس لادری و دیواری، مت‌های پیلاتس و کش‌های ژیمناستیک.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۹:۳۰ الی ۲۱:۳۰",
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 73
+  },
+  {
+    "id": "store-sport-12",
+    "name": "هایپر ورزشی کاسپین اسپرت رشت",
+    "slug": "caspian-sport-rasht",
+    "category": "پوشاک، کفش و ساک ورزشی",
+    "city": "رشت",
+    "area": "گلسار",
+    "address": "رشت، بلوار گلسار، خیابان ۱۰۸، روبروی مجتمع دیلمان، فروشگاه کاسپین اسپرت",
+    "phones": {
+      "mobile1": "09112345678",
+      "mobile2": "09382345678",
+      "landline": "01333774411"
+    },
+    "coordinates": {
+      "lat": 37.2915,
+      "lng": 49.5872
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989112345678",
+      "telegram": "https://t.me/caspian_sport_rasht",
+      "instagram": "https://instagram.com/caspian_sport_golsar"
+    },
+    "website": "https://caspiansport.ir",
+    "images": [
+      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "عرضه‌کننده پوشاک ورزشی اورجینال، لگ‌های بدنسازی، شیکر و فلاسک‌های ورزشی، کفش‌های رانینگ و تجهیزات تخصصی تناسب اندام در استان گیلان.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۳۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 92
+  },
+  {
+    "id": "store-sport-13",
+    "name": "فروشگاه تخصصی یوگا و پیلاتس نیلوفر آبی تهران",
+    "slug": "niloofar-yoga-store",
+    "category": "مت یوگا، پیلاتس و فوم‌رولر",
+    "city": "تهران",
+    "area": "پاسداران",
+    "address": "تهران، خیابان پاسداران، نبش بوستان پنجم، برج نگین پاسداران، طبقه اول",
+    "phones": {
+      "mobile1": "09124455667",
+      "mobile2": "09374455667",
+      "landline": "02122589900"
+    },
+    "coordinates": {
+      "lat": 35.7654,
+      "lng": 51.4589
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989124455667",
+      "telegram": "https://t.me/niloofar_yoga_shop",
+      "instagram": "https://instagram.com/niloofar_yoga_store"
+    },
+    "website": "https://niloofaryoga.com",
+    "images": [
+      "/assets/images/female_stretching_mat_1788014368101.jpg",
+      "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "تخصصی‌ترین مرکز زیراندازهای اکولوجیک TPE و چوب‌پنبه طبیعی، آجر یوگا، فوم رولرهای ماساژ ریکاوری، کش‌های ژیمناستیک و صندلی‌های مدیتشن.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۰:۰۰",
+    "featured": false,
+    "rating": 4.9,
+    "reviewCount": 67
+  },
+  {
+    "id": "store-sport-14",
+    "name": "فروشگاه دوچرخه و کوهستان کراس اهواز",
+    "slug": "cross-bicycle-ahvaz",
+    "category": "دوچرخه، اقلام دوچرخه‌سواری و قطعات",
+    "city": "اهواز",
+    "area": "کیانپارس",
+    "address": "اهواز، کیانپارس، خیابان پهلوان غربی، جنب میدان پهلوان، پلاک ۵۵",
+    "phones": {
+      "mobile1": "09161112233",
+      "mobile2": "09301112233",
+      "landline": "06133361234"
+    },
+    "coordinates": {
+      "lat": 31.3468,
+      "lng": 48.6832
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989161112233",
+      "telegram": "https://t.me/cross_bike_ahvaz",
+      "instagram": "https://instagram.com/cross_bicycle_ahvaz"
+    },
+    "website": "https://crossahvaz.ir",
+    "images": [
+      "/assets/images/cyclist_hero_velmont_1788013387338.jpg",
+      "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/cyclist_motion_card_1788013401900.jpg"
+    ],
+    "description": "نمایندگی دوچرخه‌های کراس و فلش، قطعات یدکی دنده و ترمز، کلاه‌های ایمنی دارای چراغ هشدار و قمقمه‌های دوجداره عایق حرارتی.",
+    "workingHours": "همه روزه: ۱۷:۰۰ الی ۲۳:۳۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 58
+  },
+  {
+    "id": "store-sport-15",
+    "name": "باشگاه بدنسازی و تناسب اندام اکسیژن پرو زعفرانیه",
+    "slug": "oxygen-pro-zaferaniyeh",
+    "category": "باشگاه‌های ورزشی (بدنسازی، فیتنس، کراس‌فیت و پیلاتس)",
+    "city": "تهران",
+    "area": "زعفرانیه",
+    "address": "تهران، زعفرانیه، خیابان مقدس اردبیلی، پلاک ۸۲، مجموعه اکسیژن پرو",
+    "phones": {
+      "mobile1": "09129990011",
+      "mobile2": "09399990011",
+      "landline": "02122401122"
+    },
+    "coordinates": {
+      "lat": 35.8095,
+      "lng": 51.4168
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989129990011",
+      "telegram": "https://t.me/oxygen_pro_club",
+      "instagram": "https://instagram.com/oxygen_pro_fitness"
+    },
+    "website": "https://oxygenclub.ir",
+    "images": [
+      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "کلاب ورزشی فوق‌مدرن با سالن‌های مجزای تمرینات وزنه‌برداری قدرتی، پیلاتس کادیلاک و ریفرمر، رینگ بوکس و کافی‌شاپ ورزشی ارگانیک.",
+    "workingHours": "آقایان: ۶:۰۰ الی ۲۳:۳۰ | بانوان: ۷:۰۰ الی ۲۰:۰۰ (سالن اختصاصی)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 210
+  },
+  {
+    "id": "store-sport-16",
+    "name": "فروشگاه تجهیزات ورزشی اطلس اسپرت قم",
+    "slug": "atlas-sport-qom",
+    "category": "دمبل، وزنه و هالتر",
+    "city": "قم",
+    "area": "خیابان دورشهر",
+    "address": "قم، خیابان دورشهر، نبش کوچه ۱۲، ساختمان اطلس، پلاک ۲۴",
+    "phones": {
+      "mobile1": "09127512345",
+      "mobile2": "09367512345",
+      "landline": "02537745566"
+    },
+    "coordinates": {
+      "lat": 34.6391,
+      "lng": 50.8754
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989127512345",
+      "telegram": "https://t.me/atlas_sport_qom",
+      "instagram": "https://instagram.com/atlassport.qom"
+    },
+    "website": "https://atlassport-qom.ir",
+    "images": [
+      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "توزیع انواع دمبل‌های متغیر، وزنه‌های دور لاستیک، میله بارفیکس چندکاره، کش‌های پاورباند و تجهیزات تناسب اندام خانگی در استان قم.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۹:۳۰ الی ۱۳:۳۰ و ۱۶:۳۰ الی ۲۲:۰۰",
+    "featured": false,
+    "rating": 4.6,
+    "reviewCount": 49
+  },
+  {
+    "id": "store-sport-17",
+    "name": "فروشگاه اسکیت و تنیس منیریه اسپرت ۲",
+    "slug": "moniriyeh-sport-2",
+    "category": "پوشاک، کفش و ساک ورزشی",
+    "city": "تهران",
+    "area": "میدان منیریه",
+    "address": "تهران، میدان منیریه، خیابان معیری، نبش کوچه شکری، پلاک ۳۸",
+    "phones": {
+      "mobile1": "09126789012",
+      "mobile2": "09196789012",
+      "landline": "02155361188"
+    },
+    "coordinates": {
+      "lat": 35.6805,
+      "lng": 51.4022
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989126789012",
+      "telegram": "https://t.me/moniriyeh_sport2",
+      "instagram": "https://instagram.com/moniriyeh_sport2"
+    },
+    "website": "https://moniriyehsport.ir",
+    "images": [
+      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "تخصصی‌ترین مرکز راکت‌های تنیس و بدمینتون برند ویلسون و هد، کفش و اسکیت‌های رولربلید، ساک‌های ورزشی چرم و قمقمه‌های ورزشی استیل.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۱:۳۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 81
+  },
+  {
+    "id": "store-sport-18",
+    "name": "باشگاه بدنسازی چامپ هیرو (Champ Hero) اصفهان",
+    "slug": "champ-hero-gym-isfahan",
+    "category": "باشگاه‌های ورزشی (بدنسازی، فیتنس، کراس‌فیت و پیلاتس)",
+    "city": "اصفهان",
+    "area": "مرداویج",
+    "address": "اصفهان، خیابان مرداویج، خیابان شیخ کلینی، مجتمع ورزشی قهرمان، پلاک ۱۰",
+    "phones": {
+      "mobile1": "09131002233",
+      "mobile2": "09351002233",
+      "landline": "03136691122"
+    },
+    "coordinates": {
+      "lat": 32.6105,
+      "lng": 51.6742
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989131002233",
+      "telegram": "https://t.me/champ_hero_isf",
+      "instagram": "https://instagram.com/champherogym"
+    },
+    "website": "https://champherogym.ir",
+    "images": [
+      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "باشگاه اختصاصی بدنسازی با رک‌های وزنه‌برداری المپیکی، سالن مجزای کراس‌فیت و کالیستنیکس، بوفه رژیمی پروتئینی و مربیان قهرمان کشور.",
+    "workingHours": "آقایان: ۷:۰۰ الی ۲۳:۰۰ | بانوان: ۸:۰۰ الی ۱۴:۰۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 126
+  },
+  {
+    "id": "store-sport-19",
+    "name": "فروشگاه پوشاک و لوازم ورزشی نایک سنتر مشهد",
+    "slug": "nike-center-mashhad",
+    "category": "پوشاک، کفش و ساک ورزشی",
+    "city": "مشهد",
+    "area": "احمدآباد",
+    "address": "مشهد، بلوار احمدآباد، نبش خیابان پاستور، برج تجاری پاستور، پلاک ۴",
+    "phones": {
+      "mobile1": "09151119988",
+      "mobile2": "09391119988",
+      "landline": "05138452200"
+    },
+    "coordinates": {
+      "lat": 36.2954,
+      "lng": 59.5698
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989151119988",
+      "telegram": "https://t.me/nike_center_mashhad",
+      "instagram": "https://instagram.com/nike_center_mhd"
+    },
+    "website": "https://nikecentermhd.ir",
+    "images": [
+      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "توزیع انواع تیشرت و شلوارهای ورزشی تنفسی، کوله‌پشتی‌های اسپرت، کفش‌های رانینگ و پیاده‌روی، شیکر و دستکش‌های تمرینی بدنسازی.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 105
+  },
+  {
+    "id": "store-sport-20",
+    "name": "مجموعه ورزشی بین‌المللی انقلاب تهران",
+    "slug": "enghelab-sports-complex",
+    "category": "باشگاه‌های ورزشی (بدنسازی، فیتنس، کراس‌فیت و پیلاتس)",
+    "city": "تهران",
+    "area": "خیابان سئول",
+    "address": "تهران، خیابان سئول، جنب اتوبان آیت‌الله هاشمی رفسنجانی (نیایش)، مجموعه ورزشی انقلاب",
+    "phones": {
+      "mobile1": "09121110099",
+      "mobile2": "09351110099",
+      "landline": "02126216150"
+    },
+    "coordinates": {
+      "lat": 35.7892,
+      "lng": 51.4061
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989121110099",
+      "telegram": "https://t.me/enghelab_complex",
+      "instagram": "https://instagram.com/enghelab_sports_complex"
+    },
+    "website": "https://enghelabsport.ir",
+    "images": [
+      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/female_stretching_mat_1788014368101.jpg"
+    ],
+    "description": "بزرگترین دهکده ورزشی پایتخت شامل جاده تندرستی، سالن‌های بدنسازی VIP، استخرهای روباز و سرپوشیده، سالن پدل و تنیس، پیست مینی‌گلف و سالن‌های تخصصی پیلاتس.",
+    "workingHours": "همه روزه: ۶:۰۰ الی ۲۳:۳۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 350
+  },
+
+  {
+    "id": "store-protein-1",
+    "name": "فروشگاه تخصصی مکمل‌های ورزشی پروتئین کینگ منیریه",
+    "slug": "protein-king-moniriyeh",
     "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
     "city": "تهران",
     "area": "میدان منیریه",
@@ -261,14 +704,660 @@
     },
     "website": "https://proteinking.ir",
     "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop"
     ],
-    "description": "مرکز مجاز توزیع انواع مکمل‌های اورجینال ورزشی با برچسب اصالت سازمان غذا و دارو (تی‌تک)، شامل وی ایزوله و کنسانتره، کراتین میکرونایزد، بی‌سی‌ای‌ای، گلوتامین، پمپ، مولتی ویتامین‌های ورزشی و مشاوره رایگان تغذیه ورزشی.",
+    "description": "مرکز مجاز توزیع انواع مکمل‌های اورجینال ورزشی با برچسب اصالت سازمان غذا و دارو (تی‌تک)، شامل وی ایزوله و کنسانتره، کراتین میکرونایزد، بی‌سی‌ای‌ای، گلوتامین، پمپ، مولتی ویتامین‌های ورزشی و مشاوره تخصصی.",
     "workingHours": "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۲:۰۰",
     "featured": true,
     "rating": 4.9,
     "reviewCount": 135
+  },
+  {
+    "id": "store-protein-2",
+    "name": "داروخانه و مکمل شاپ دکتر داروبیگی سعادت‌آباد",
+    "slug": "dr-daroubeigi-supplements",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "سعادت‌آباد",
+    "address": "تهران، سعادت‌آباد، چهارراه سرو، بلوار پاک‌نژاد، پلاک ۷۸",
+    "phones": {
+      "mobile1": "09123344556",
+      "mobile2": "09383344556",
+      "landline": "02122145566"
+    },
+    "coordinates": {
+      "lat": 35.7845,
+      "lng": 51.3712
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989123344556",
+      "telegram": "https://t.me/daroubeigi_pharmacy",
+      "instagram": "https://instagram.com/daroubeigi_supplements"
+    },
+    "website": "https://daroubeigi.com",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "بزرگترین هایپر داروخانه‌ای مکمل‌های ورزشی و تغذیه‌ای در غرب تهران با لاین اختصاصی برندهای معتبر جهانی، پروتئین وی، گینرهای کربوهیدرات، ال‌کارنیتین و آمینو اسیدها.",
+    "workingHours": "همه روزه حتی تعطیلات: ۹:۰۰ الی ۲۴:۰۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 160
+  },
+  {
+    "id": "store-protein-3",
+    "name": "فروشگاه تخصصی مکمل‌های ورزشی بادی من (BodyMan)",
+    "slug": "bodyman-supplement-store",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "صادقیه",
+    "address": "تهران، فلکه دوم صادقیه، ابتدای بلوار آیت‌الله کاشانی، جنب بیمارستان ابن‌سینا، برج مینا، طبقه همکف",
+    "phones": {
+      "mobile1": "09121234567",
+      "mobile2": "09301234567",
+      "landline": "02144001122"
+    },
+    "coordinates": {
+      "lat": 35.7289,
+      "lng": 51.3256
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989121234567",
+      "telegram": "https://t.me/bodyman_ir",
+      "instagram": "https://instagram.com/bodyman_iran"
+    },
+    "website": "https://bodyman.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+    ],
+    "description": "نمایندگی رسمی برندهای مطرح مکمل با ضمانت ۱۰۰٪ اصالت کالا و کد استعلام پیامکی TTAC، ارسال فوری به تمام نقاط تهران و کشور.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۱:۳۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 182
+  },
+  {
+    "id": "store-protein-4",
+    "name": "مرکز مکمل و پروتئین ورزشی آریا ساپلمنت شیراز",
+    "slug": "aria-supplements-shiraz",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "شیراز",
+    "area": "ملاصدرا",
+    "address": "شیراز، خیابان ملاصدرا، نبش کوچه ۴، مجتمع پزشکی نوین، طبقه همکف",
+    "phones": {
+      "mobile1": "09171123456",
+      "mobile2": "09361123456",
+      "landline": "07132348899"
+    },
+    "coordinates": {
+      "lat": 29.6284,
+      "lng": 52.5215
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989171123456",
+      "telegram": "https://t.me/ariasupplement_shiraz",
+      "instagram": "https://instagram.com/aria_supplements_shiraz"
+    },
+    "website": "https://ariasupplement.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "ارائه‌کننده برترین مکمل‌های افزایش وزن و حجم، پروتئین‌های ایزوله زودجذب، آمینواسیدهای شاخه‌دار BCAA، گلوتامین و پمپ‌های قبل تمرین.",
+    "workingHours": "همه روزه: ۹:۳۰ الی ۱۳:۳۰ و ۱۶:۳۰ الی ۲۱:۳۰",
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 94
+  },
+  {
+    "id": "store-protein-5",
+    "name": "داروخانه تخصصی مکمل‌های بدنسازی دکتر ناصری اصفهان",
+    "slug": "dr-naseri-supplements-isfahan",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "اصفهان",
+    "area": "خیابان توحید",
+    "address": "اصفهان، خیابان توحید میانی، جنب بانک سامان، پلاک ۱۱۸",
+    "phones": {
+      "mobile1": "09132223344",
+      "mobile2": "09392223344",
+      "landline": "03136261144"
+    },
+    "coordinates": {
+      "lat": 32.6289,
+      "lng": 51.6582
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989132223344",
+      "telegram": "https://t.me/naseri_pharmacy_esf",
+      "instagram": "https://instagram.com/dr.naseri_supplements"
+    },
+    "website": "https://naseripharmacy.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "مرکز معتبر و دارای مجوز وزارت بهداشت برای توزیع مکمل‌های غذایی، پروتئینی و ویتامینی ویژه ورزشکاران بدنسازی و فیتنس در اصفهان.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۹:۰۰ الی ۲۲:۰۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 118
+  },
+  {
+    "id": "store-protein-6",
+    "name": "فروشگاه پروتئین و آمینو ایران ماسل (Iran Muscle) مشهد",
+    "slug": "iran-muscle-mashhad",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "مشهد",
+    "area": "بلوار وکیل‌آباد",
+    "address": "مشهد، بلوار وکیل‌آباد، نبش وکیل‌آباد ۲۳ (سیدرضی)، مجتمع ورزشی تندیس",
+    "phones": {
+      "mobile1": "09153334455",
+      "mobile2": "09023334455",
+      "landline": "05138902233"
+    },
+    "coordinates": {
+      "lat": 36.3356,
+      "lng": 59.5089
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989153334455",
+      "telegram": "https://t.me/iranmuscle_mashhad",
+      "instagram": "https://instagram.com/iranmuscle_mhd"
+    },
+    "website": "https://iranmuscle-mashhad.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "پخش تخصصی مکمل‌های ورزشی برندهای دوبیس، ژن استار، ویتاپی، اپکس و پی‌ان‌سی با لیبل اصالت کالا و مشاوره تغذیه.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 87
+  },
+  {
+    "id": "store-protein-7",
+    "name": "داروخانه ورزشی و مکمل دکتر ستوده جهانشهر کرج",
+    "slug": "dr-sotoudeh-supplements-karaj",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "کرج",
+    "area": "جهانشهر",
+    "address": "کرج، جهانشهر، میدان شهید مدنی، بلوار ماهان، پلاک ۱۰۲",
+    "phones": {
+      "mobile1": "09125556677",
+      "mobile2": "09355556677",
+      "landline": "02632556677"
+    },
+    "coordinates": {
+      "lat": 35.8291,
+      "lng": 50.9854
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989125556677",
+      "telegram": "https://t.me/sotoudeh_pharmacy",
+      "instagram": "https://instagram.com/sotoudeh_supplements"
+    },
+    "website": "https://sotoudehpharmacy.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "مرکز جامع مکمل‌های بدنسازی در استان البرز، مشاوره مصرف حرفه‌ای با دکتر داروساز، تنوع کامل طعم‌های پروتئین وی و کراتین مونوهیدرات.",
+    "workingHours": "همه روزه: ۹:۰۰ الی ۲۳:۰۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 104
+  },
+  {
+    "id": "store-protein-8",
+    "name": "مرکز تخصصی مکمل‌های اورجینال ماکس فارما پاسداران",
+    "slug": "max-pharma-pasdaran",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "پاسداران",
+    "address": "تهران، خیابان پاسداران، روبروی بوستان ششم، برج سفید، طبقه همکف تجاری",
+    "phones": {
+      "mobile1": "09127771122",
+      "mobile2": "09307771122",
+      "landline": "02122557788"
+    },
+    "coordinates": {
+      "lat": 35.7725,
+      "lng": 51.4612
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989127771122",
+      "telegram": "https://t.me/maxpharma_tehran",
+      "instagram": "https://instagram.com/maxpharma.ir"
+    },
+    "website": "https://maxpharma.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/female_stretching_mat_1788014368101.jpg"
+    ],
+    "description": "عرضه محصولات پروتئینی، کلاژن ورزشی، مکمل‌های چربی‌سوز ترموژنیک، ال‌سیترولین و بی سی ای ای با تاریخ مصرف بالا و استعلام رسمی.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 140
+  },
+  {
+    "id": "store-protein-9",
+    "name": "فروشگاه مکمل‌های ورزشی کارن و ژن استار منیریه",
+    "slug": "karen-genestar-moniriyeh",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "میدان منیریه",
+    "address": "تهران، خیابان ولیعصر، جنب پل امیربهادر، پلاک ۶۴۰",
+    "phones": {
+      "mobile1": "09129988776",
+      "mobile2": "09379988776",
+      "landline": "02155364455"
+    },
+    "coordinates": {
+      "lat": 35.6765,
+      "lng": 51.4035
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989129988776",
+      "telegram": "https://t.me/karen_supplements_moniriyeh",
+      "instagram": "https://instagram.com/karensport_moniriyeh"
+    },
+    "website": "https://karensport.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "نمایندگی رسمی محصولات شرکت داروسازی کارن و ژن‌استار، گلدن ماس، پروتئین وی ۱۰۰٪، پمپ، مولتی ویتامین و گلوتامین میکرونایزد.",
+    "workingHours": "همه روزه: ۹:۳۰ الی ۲۱:۰۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 79
+  },
+  {
+    "id": "store-protein-10",
+    "name": "داروخانه و مکمل‌سرای تخصصی مرکزی آبرسان تبریز",
+    "slug": "abresan-supplements-tabriz",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تبریز",
+    "area": "چهارراه آبرسان",
+    "address": "تبریز، خیابان آزادی، چهارراه آبرسان، روبروی برج سفید، پلاک ۱۲",
+    "phones": {
+      "mobile1": "09143332211",
+      "mobile2": "09013332211",
+      "landline": "04133358899"
+    },
+    "coordinates": {
+      "lat": 38.0654,
+      "lng": 46.3214
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989143332211",
+      "telegram": "https://t.me/abresan_supplements",
+      "instagram": "https://instagram.com/abresan_pharma_tabriz"
+    },
+    "website": "https://abresanpharma.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "مرکز تخصصی ارائه مکمل‌های دارای تاییدیه وزارت بهداشت در استان آذربایجان شرقی، پروتئین وی کاله، اپتیموم نوتریشن و الیمپ.",
+    "workingHours": "همه روزه: ۸:۳۰ الی ۲۳:۰۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 112
+  },
+  {
+    "id": "store-protein-11",
+    "name": "فروشگاه تخصصی وی پروتئین و کراتین فیت مکس رشت",
+    "slug": "fitmax-supplements-rasht",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "رشت",
+    "area": "گلسار",
+    "address": "رشت، گلسار، بلوار دیلمان، نبش خیابان بهارستان، مجتمع تجاری دیلمان",
+    "phones": {
+      "mobile1": "09113334455",
+      "mobile2": "09333334455",
+      "landline": "01333758800"
+    },
+    "coordinates": {
+      "lat": 37.3012,
+      "lng": 49.5987
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989113334455",
+      "telegram": "https://t.me/fitmax_rasht",
+      "instagram": "https://instagram.com/fitmax_rasht"
+    },
+    "website": "https://fitmaxrasht.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+    ],
+    "description": "ارائه انواع پروتئین وی ۱۰۰٪، کازئین، کراتین کریپوری، اسیدهای آمینه ضروری EAA و آمینو انرژی همراه با ارسال رایگان در شهر رشت.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 65
+  },
+  {
+    "id": "store-protein-12",
+    "name": "مرکز مکمل‌های اورجینال خوزستان نوتریشن اهواز",
+    "slug": "khuzestan-nutrition-ahvaz",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "اهواز",
+    "area": "زیتون کارمندی",
+    "address": "اهواز، زیتون کارمندی، خیابان زاویه، نبش خیابان هدایت، پلاک ۶۲",
+    "phones": {
+      "mobile1": "09163337788",
+      "mobile2": "09033337788",
+      "landline": "06134449900"
+    },
+    "coordinates": {
+      "lat": 31.3598,
+      "lng": 48.7123
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989163337788",
+      "telegram": "https://t.me/khuzestan_nutrition",
+      "instagram": "https://instagram.com/khuzestan_nutrition_ahv"
+    },
+    "website": "https://khuzestannutrition.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "توزیع انواع پروتئین‌های ورزشی، کربو پروتئین، مس گینر، گلوتامین و مکمل‌های پشتیبانی از ریکاوری بعد از تمرین در استان خوزستان.",
+    "workingHours": "همه روزه: ۱۷:۰۰ الی ۲۳:۳۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 91
+  },
+  {
+    "id": "store-protein-13",
+    "name": "داروخانه آنلاین مکمل و تغذیه ورزشی داروبوم ونک",
+    "slug": "darouboom-sports-nutrition",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "میدان ونک",
+    "address": "تهران، میدان ونک، خیابان ملاصدرا، خیابان پردیس، پلاک ۲۱",
+    "phones": {
+      "mobile1": "09120011223",
+      "mobile2": "09350011223",
+      "landline": "02188663344"
+    },
+    "coordinates": {
+      "lat": 35.7598,
+      "lng": 51.4082
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989120011223",
+      "telegram": "https://t.me/darouboom_sport",
+      "instagram": "https://instagram.com/darouboom_official"
+    },
+    "website": "https://darouboom.com",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/female_stretching_mat_1788014368101.jpg"
+    ],
+    "description": "پلتفرم جامع توزیع مکمل‌های تغذیه‌ای و ورزشی دارای هولوگرام سازمان غذا و دارو، مشاوره آنلاین کارشناسان تغذیه و تحویل فوری ۲ ساعته در تهران.",
+    "workingHours": "همه روزه: ۲۴ ساعته (سفارش آنلاین)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 230
+  },
+  {
+    "id": "store-protein-14",
+    "name": "فروشگاه نوتریشن پلاس (Nutrition Plus) قم",
+    "slug": "nutrition-plus-qom",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "قم",
+    "area": "بلوار امین",
+    "address": "قم، بلوار امین، روبروی بلوار جمهوری اسلامی، مجتمع تجاری امین، واحد ۱۰۴",
+    "phones": {
+      "mobile1": "09128523456",
+      "mobile2": "09388523456",
+      "landline": "02532914455"
+    },
+    "coordinates": {
+      "lat": 34.6215,
+      "lng": 50.8654
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989128523456",
+      "telegram": "https://t.me/nutritionplus_qom",
+      "instagram": "https://instagram.com/nutritionplus.qom"
+    },
+    "website": "https://nutritionplus-qom.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "توزیع انواع پروتئین وی، کراتین، آمینو اسید، قرص‌های جوشان ویتامینی و پودرهای ایزوتونیک جهت بازگرداندن الکترولیت‌های بدن.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۱۳:۳۰ و ۱۷:۰۰ الی ۲۲:۳۰",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 61
+  },
+  {
+    "id": "store-protein-15",
+    "name": "مکمل شاپ تخصصی گینر و پروتئین پاور بیلد تهرانپارس",
+    "slug": "powerbuild-tehranpars",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "تهرانپارس",
+    "address": "تهران، تهرانپارس، فلکه اول، خیابان امیری طائمه (گلبرگ)، نبش خیابان ۱۴۲ غربی، پلاک ۱۶",
+    "phones": {
+      "mobile1": "09126663322",
+      "mobile2": "09366663322",
+      "landline": "02177885566"
+    },
+    "coordinates": {
+      "lat": 35.7312,
+      "lng": 51.5345
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989126663322",
+      "telegram": "https://t.me/powerbuild_east",
+      "instagram": "https://instagram.com/powerbuild.supplement"
+    },
+    "website": "https://powerbuildshop.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+    ],
+    "description": "مرکز تخصصی پروتئین‌های اورجینال شرق تهران، فروش گینرهای باکیفیت جهت افزایش وزن، پروتئین وی کنسانتره و شیکرهای برقی شارژی.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 98
+  },
+  {
+    "id": "store-protein-16",
+    "name": "فروشگاه مکمل و تغذیه قهرمانان یزد",
+    "slug": "heroes-nutrition-yazd",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "یزد",
+    "area": "خیابان کاشانی",
+    "address": "یزد، خیابان آیت‌الله کاشانی، روبروی پارک هفتم تیر، مجتمع تجاری ستاره، طبقه منفی ۱",
+    "phones": {
+      "mobile1": "09133512345",
+      "mobile2": "09373512345",
+      "landline": "03538221133"
+    },
+    "coordinates": {
+      "lat": 31.8845,
+      "lng": 54.3612
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989133512345",
+      "telegram": "https://t.me/yazd_heroes_nutrition",
+      "instagram": "https://instagram.com/heroes_nutrition_yazd"
+    },
+    "website": "https://heroesnutrition-yazd.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "عرضه‌کننده انواع مکمل‌های استاندارد، آمینواسیدهای تزریقی و پودری مجاز ورزشی، ویتامین‌های گروه B، کلسیم-منیزیم-زینک و پمپ‌های کافئینی.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۹:۰۰ الی ۱۳:۰۰ و ۱۷:۰۰ الی ۲۲:۰۰",
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 54
+  },
+  {
+    "id": "store-protein-17",
+    "name": "مرکز مشاوره و فروش مکمل فیتنس فارم کرمانشاه",
+    "slug": "fitness-pharm-kermanshah",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "کرمانشاه",
+    "area": "خیابان نوبهار",
+    "address": "کرمانشاه، ۲۲ بهمن، خیابان نوبهار، بین کوچه ۱۰۸ و ۱۰۹، پلاک ۴۴",
+    "phones": {
+      "mobile1": "09181314567",
+      "mobile2": "09391314567",
+      "landline": "08338367788"
+    },
+    "coordinates": {
+      "lat": 34.3389,
+      "lng": 47.0795
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989181314567",
+      "telegram": "https://t.me/fitnesspharm_kermanshah",
+      "instagram": "https://instagram.com/fitnesspharm.kermanshah"
+    },
+    "website": "https://fitnesspharm.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+    ],
+    "description": "مرکز تخصصی پخش مکمل‌های اورجینال بدنسازی و پرورش اندام غرب کشور با تاییدیه‌های بهداشتی و مشاوره رایگان تناسب اندام.",
+    "workingHours": "همه روزه: ۹:۳۰ الی ۱۳:۳۰ و ۱۶:۳۰ الی ۲۱:۳۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 77
+  },
+  {
+    "id": "store-protein-18",
+    "name": "داروخانه شبانه‌روزی و هایپر مکمل آرشیدا نیاوران",
+    "slug": "arshida-pharma-niavaran",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "تهران",
+    "area": "نیاوران",
+    "address": "تهران، نیاوران، خیابان باهنر، تقاطع خیابان مژده، پلاک ۳۱۲",
+    "phones": {
+      "mobile1": "09124448899",
+      "mobile2": "09304448899",
+      "landline": "02122709988"
+    },
+    "coordinates": {
+      "lat": 35.8156,
+      "lng": 51.4721
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989124448899",
+      "telegram": "https://t.me/arshida_pharmacy",
+      "instagram": "https://instagram.com/arshida_niavaran"
+    },
+    "website": "https://arshidapharma.com",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "بخش تخصصی مکمل‌های ورزشی وارداتی و تولید داخل با اصالت قطعی، پروتئین وی هیدرولیزه، کراتین ترکیبی، امگا۳ غلیظ ورزشی و قرص‌های مفاصل و ریکاوری.",
+    "workingHours": "۲۴ ساعته (شبانه‌روزی بدون تعطیلی)",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 175
+  },
+  {
+    "id": "store-protein-19",
+    "name": "فروشگاه پروتئین و کراتین المپیک شیراز",
+    "slug": "olympic-protein-shiraz",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "شیراز",
+    "area": "عفیف‌آباد",
+    "address": "شیراز، خیابان عفیف‌آباد، روبروی کوچه ۱۸، مجتمع تجاری سپهر، واحد ۲۴",
+    "phones": {
+      "mobile1": "09172225566",
+      "mobile2": "09352225566",
+      "landline": "07136483322"
+    },
+    "coordinates": {
+      "lat": 29.6245,
+      "lng": 52.5102
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989172225566",
+      "telegram": "https://t.me/olympic_protein_shiraz",
+      "instagram": "https://instagram.com/olympic_protein.shz"
+    },
+    "website": "https://olympicprotein-shiraz.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+    ],
+    "description": "نمایندگی معتبر مکمل‌های تناسب اندام، پودرهای چربی سوز، پروتئین وی ایزوله رژیمی، بارهای پروتئینی و کره‌های بادام زمینی رژیمی.",
+    "workingHours": "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
+    "featured": false,
+    "rating": 4.8,
+    "reviewCount": 82
+  },
+  {
+    "id": "store-protein-20",
+    "name": "داروخانه تخصصی مکمل‌های ورزشی دکتر اصغری ارومیه",
+    "slug": "dr-asghari-supplements-urmia",
+    "category": "فروشگاه‌های مکمل ورزشی (پروتئین، کراتین، گینر و آمینو)",
+    "city": "ارومیه",
+    "area": "خیابان حسنی",
+    "address": "ارومیه، خیابان حسنی، روبروی بیمارستان کوثر، مجتمع پزشکی نوید، طبقه همکف",
+    "phones": {
+      "mobile1": "09144412345",
+      "mobile2": "09384412345",
+      "landline": "04433467788"
+    },
+    "coordinates": {
+      "lat": 37.5489,
+      "lng": 45.0674
+    },
+    "social": {
+      "whatsapp": "https://wa.me/989144412345",
+      "telegram": "https://t.me/asghari_pharmacy_urmia",
+      "instagram": "https://instagram.com/dr.asghari_supplements"
+    },
+    "website": "https://asgharipharmacy.ir",
+    "images": [
+      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
+    ],
+    "description": "مرکز تخصصی عرضه مکمل‌های بدنسازی استاندارد، کراتین، گلوتامین، پمپ، پروتئین و مکمل‌های سلامت مفاصل و عضلات در استان آذربایجان غربی.",
+    "workingHours": "شنبه تا پنج‌شنبه: ۹:۰۰ الی ۲۱:۳۰",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 89
   }
 ]
