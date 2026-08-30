@@ -1,0 +1,6 @@
+{
+  "name": "SPMAN | معرفی فروشگاه‌های لوازم ورزشی",
+  "description": "اسپرت من (spman.ir) - مرجع تخصصی معرفی فروشگاه‌های معتبر لوازم و تجهیزات ورزشی در سراسر ایران همراه با نقشه زنده، شماره تماس، شبکه‌های اجتماعی و تصاویر فروشگاه‌ها",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
