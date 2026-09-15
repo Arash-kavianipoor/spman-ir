@@ -64,6 +64,65 @@ export function getStoreLocalBusinessSchema(store: Store) {
   };
 }
 
+export function getStoresItemListSchema(stores: Store[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "فروشگاه‌های معتبر لوازم ورزشی ایران",
+    "description": "فهرست برترین فروشگاه‌های تجهیزات و لوازم ورزشی در منیریه تهران و سراسر کشور",
+    "itemListElement": stores.map((store, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "SportingGoodsStore",
+        "name": store.name,
+        "description": store.description,
+        "image": Array.isArray(store.images) && store.images.length > 0 ? store.images[0] : undefined,
+        "telephone": store.phones?.mobile1 || store.phones?.landline,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": store.address,
+          "addressLocality": store.city,
+          "addressCountry": "IR"
+        }
+      }
+    }))
+  };
+}
+
+export function getFAQSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "چگونه می‌توانم فروشگاه لوازم ورزشی خود را در سامانه SPMAN ثبت کنم؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "از طریق فرم ثبت فروشگاه در سایت یا تماس مستقیم با واحد پشتیبانی، مشخصات فروشگاه به همراه ۳ عکس اختصاصی و لوکیشن دقیق ثبت و پس از تایید مدیر منتشر می‌شود."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "آیا دسترسی به اطلاعات تماس و نقشه فروشگاه‌ها رایگان است؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "بله، تمام اطلاعات تماس مستقیم (موبایل و تلفن ثابت)، مسیریابی زنده روی نقشه و گالری تصاویر فروشگاه‌ها برای عموم کاربران کاملاً رایگان است."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "آیا تصاویر فروشگاه‌ها قبل از بارگذاری بهینه می‌شوند؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "بله، سیستم خودکار کاهش حجم و تبدیل تصاویر به فرمت مدرن WebP موجب بارگذاری فوق‌سریع و صرفه‌جویی در مصرف اینترنت کاربران می‌گردد."
+        }
+      }
+    ]
+  };
+}
+
 export function getEquipmentProductSchema(equipment: EquipmentItem) {
   return {
     "@context": "https://schema.org",
@@ -111,3 +170,4 @@ export function getBreadcrumbSchema() {
     ]
   };
 }
+
