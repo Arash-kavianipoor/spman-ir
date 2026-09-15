@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Navigation, Phone, ExternalLink, Compass } from 'lucide-react';
 import { Store } from '../types';
+import { SingleStoreLeafletMap } from './SingleStoreLeafletMap';
 
 interface StoreMapSectionProps {
   stores: Store[];
@@ -17,7 +18,6 @@ export const StoreMapSection: React.FC<StoreMapSectionProps> = ({ stores, onSele
   if (!activeStore) return null;
 
   const { lat, lng } = activeStore.coordinates;
-  const mapEmbedUrl = `https://maps.google.com/maps?q=${lat},${lng}&hl=fa&z=15&output=embed`;
 
   return (
     <section id="map-view" className="py-16 bg-[#090a0f] border-t border-white/5 relative overflow-hidden">
@@ -28,13 +28,13 @@ export const StoreMapSection: React.FC<StoreMapSectionProps> = ({ stores, onSele
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold">
               <Compass className="w-3.5 h-3.5" />
-              <span>موقعیت مکانی زنده روی نقشه گوگل</span>
+              <span>Leaflet Map • OpenStreetMap (OSM) • Latitude & Longitude</span>
             </div>
             <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
               نقشه تعاملی فروشگاه‌های ورزشی
             </h2>
             <p className="text-sm text-zinc-400 max-w-xl font-normal">
-              با انتخاب هر فروشگاه، موقعیت دقیق جغرافیایی، نقشه زنده و اطلاعات تماس آن به‌صورت پویا نمایش داده می‌شود.
+              نمایش زنده مختصات جغرافیایی (Latitude & Longitude) بر بستر Leaflet Map و سرورهای نقشه OpenStreetMap بدون نیاز به API Key.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export const StoreMapSection: React.FC<StoreMapSectionProps> = ({ stores, onSele
           </div>
         </div>
 
-        {/* Split View: Store List on Side & Live Google Map */}
+        {/* Split View: Store List on Side & Live Leaflet Map */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-[#11131b] border border-white/10 rounded-3xl p-4 sm:p-6 shadow-2xl">
           
           {/* Store List Column */}
@@ -87,17 +87,17 @@ export const StoreMapSection: React.FC<StoreMapSectionProps> = ({ stores, onSele
             ))}
           </div>
 
-          {/* Live Google Map Frame & Info */}
+          {/* Live Leaflet Map Frame & Info */}
           <div className="lg:col-span-8 flex flex-col justify-between space-y-4">
             
-            {/* Live Map Iframe */}
-            <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-white/10 bg-black/60 shadow-inner">
-              <iframe
-                title={`نقشه ${activeStore.name}`}
-                src={mapEmbedUrl}
-                className="w-full h-full border-0"
-                loading="lazy"
-                allowFullScreen
+            {/* Live Leaflet Map (Zero API Key required) */}
+            <div className="relative aspect-[16/9] min-h-[340px] w-full rounded-2xl overflow-hidden border border-white/10 bg-black/60 shadow-inner">
+              <SingleStoreLeafletMap
+                lat={lat}
+                lng={lng}
+                storeName={activeStore.name}
+                storeAddress={activeStore.address}
+                zoom={16}
               />
             </div>
 

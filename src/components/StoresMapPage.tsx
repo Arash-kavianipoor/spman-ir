@@ -297,7 +297,7 @@ export const StoresMapPage: React.FC<StoresMapPageProps> = ({
               </p>
             </div>
 
-            {/* Live Count & Layer Selector */}
+            {/* Live Count & OSM Badge */}
             <div className="flex items-center gap-3 shrink-0">
               <div className="bg-black/60 border border-white/15 px-3.5 py-2 rounded-2xl flex items-center gap-2.5">
                 <MapPin className="w-5 h-5 text-amber-400" />
@@ -307,32 +307,12 @@ export const StoresMapPage: React.FC<StoresMapPageProps> = ({
                 </div>
               </div>
 
-              {/* Map Layer Mode */}
-              <div className="flex bg-black/60 border border-white/15 p-1 rounded-2xl">
-                <button
-                  onClick={() => setMapType('dark')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                    mapType === 'dark' ? 'bg-amber-500 text-black shadow' : 'text-zinc-400 hover:text-white'
-                  }`}
-                >
-                  حالت مدرن
-                </button>
-                <button
-                  onClick={() => setMapType('street')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                    mapType === 'street' ? 'bg-amber-500 text-black shadow' : 'text-zinc-400 hover:text-white'
-                  }`}
-                >
-                  خیابانی
-                </button>
-                <button
-                  onClick={() => setMapType('satellite')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                    mapType === 'satellite' ? 'bg-amber-500 text-black shadow' : 'text-zinc-400 hover:text-white'
-                  }`}
-                >
-                  ماهواره‌ای
-                </button>
+              {/* OpenStreetMap Badge */}
+              <div className="bg-emerald-500/10 border border-emerald-500/30 px-3 py-2 rounded-2xl flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+                <div className="text-[11px] font-bold text-emerald-300">
+                  Leaflet + OpenStreetMap
+                </div>
               </div>
             </div>
           </div>

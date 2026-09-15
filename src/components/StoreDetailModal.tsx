@@ -19,6 +19,7 @@ import {
   Check
 } from 'lucide-react';
 import { Store } from '../types';
+import { SingleStoreLeafletMap } from './SingleStoreLeafletMap';
 
 interface StoreDetailModalProps {
   store: Store | null;
@@ -240,26 +241,39 @@ export const StoreDetailModal: React.FC<StoreDetailModalProps> = ({ store, onClo
             </div>
           </div>
 
-          {/* Location & Map Trigger */}
-          <div className="bg-black/40 border border-white/10 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2 text-sm font-bold text-white">
-                <MapPin className="w-4 h-4 text-amber-400" />
-                <span>موقعیت مکانی و آدرس دقیق:</span>
+          {/* Location & Map Preview (Leaflet) */}
+          <div className="bg-black/40 border border-white/10 rounded-2xl p-5 space-y-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <div className="flex items-center gap-2 text-sm font-bold text-white">
+                  <MapPin className="w-4 h-4 text-amber-400" />
+                  <span>موقعیت مکانی و آدرس دقیق (Leaflet Map):</span>
+                </div>
+                <p className="text-xs text-zinc-300 max-w-lg">{store.address}</p>
               </div>
-              <p className="text-xs text-zinc-300 max-w-lg">{store.address}</p>
+
+              <button
+                onClick={() => {
+                  onClose();
+                  onOpenMap(store);
+                }}
+                className="w-full sm:w-auto px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer shrink-0"
+              >
+                <Navigation className="w-4 h-4" />
+                <span>مسیریابی در نشان، بلد، ویز و گوگل مپ</span>
+              </button>
             </div>
 
-            <button
-              onClick={() => {
-                onClose();
-                onOpenMap(store);
-              }}
-              className="w-full sm:w-auto px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer shrink-0"
-            >
-              <Navigation className="w-4 h-4" />
-              <span>مشاهده نقشه زنده گوگل مپ</span>
-            </button>
+            {/* Mini Leaflet Map Preview */}
+            <div className="h-56 w-full rounded-xl overflow-hidden border border-white/10">
+              <SingleStoreLeafletMap
+                lat={store.coordinates.lat}
+                lng={store.coordinates.lng}
+                storeName={store.name}
+                storeAddress={store.address}
+                zoom={15}
+              />
+            </div>
           </div>
 
         </div>

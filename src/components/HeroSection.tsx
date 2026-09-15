@@ -149,18 +149,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 isSelected ? 'opacity-100' : 'opacity-0 pointer-events-none'
               }`}
             >
-              {/* Full-width edge-to-edge Hero Image positioned higher up for complete view */}
+              {/* Full-width edge-to-edge Hero Image centered on mobile */}
               <div className="absolute inset-0 w-full h-full">
                 <img
                   src={slide.bgImage}
                   alt={slide.category}
-                  className="w-full h-full object-cover object-[center_12%] sm:object-[center_16%] lg:object-[68%_14%] opacity-85 sm:opacity-92 filter contrast-110 brightness-95 transform scale-100 transition-all duration-1000"
+                  className="w-full h-full object-cover object-center lg:object-[68%_14%] opacity-85 sm:opacity-92 filter contrast-110 brightness-95 transform scale-100 transition-all duration-1000"
                 />
               </div>
 
               {/* Dynamic warm accent glow matching the slide category */}
               <div 
-                className="absolute bottom-0 right-0 w-[600px] h-[380px] blur-[110px] opacity-45 transition-colors duration-1000"
+                className="absolute bottom-0 right-0 sm:right-1/4 lg:right-0 left-0 lg:left-auto mx-auto lg:mx-0 w-[350px] sm:w-[600px] h-[300px] sm:h-[380px] blur-[90px] sm:blur-[110px] opacity-45 transition-colors duration-1000"
                 style={{
                   background: `radial-gradient(circle, ${slide.accentColor} 0%, transparent 70%)`
                 }}
@@ -170,9 +170,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         })}
 
         {/* Global Dark Vignettes & Gradients for full-width legibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07080b] via-[#07080b]/85 md:via-[#07080b]/55 to-transparent z-1" />
+        <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-[#07080b] via-[#07080b]/70 sm:via-[#07080b]/85 md:via-[#07080b]/55 to-transparent z-1" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#07080b] via-transparent to-[#07080b]/35 z-1" />
-        <div className="absolute bottom-0 right-1/4 w-[550px] h-[260px] bg-amber-500/15 blur-[120px] z-1" />
+        <div className="absolute bottom-0 right-0 sm:right-1/4 left-0 sm:left-auto mx-auto w-[350px] sm:w-[550px] h-[200px] sm:h-[260px] bg-amber-500/15 blur-[100px] sm:blur-[120px] z-1" />
       </div>
 
       {/* ========================================================================= */}
@@ -284,19 +284,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Right Column: Floating Monochrome Motion Action Card + Pagination Slider */}
-          <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center pt-8 lg:pt-0">
-            <div className="w-60 sm:w-72 space-y-3">
+          <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center pt-8 lg:pt-0 w-full">
+            <div className="w-full max-w-[280px] sm:max-w-xs mx-auto lg:mx-0 space-y-3">
               
               {/* Rounded Floating Preview Card */}
               <div 
                 onClick={handleNextSlide}
-                className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/20 shadow-2xl backdrop-blur-md bg-black/40 group cursor-pointer"
+                className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/20 shadow-2xl backdrop-blur-md bg-black/40 group cursor-pointer w-full"
                 title="کلیک جهت تعویض اسلاید"
               >
                 <img
                   src={activeSlide.cardImage}
                   alt={activeSlide.cardLabel}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 filter grayscale contrast-125"
+                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700 filter grayscale contrast-125"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute top-2 left-3 text-[9px] font-black px-2 py-0.5 rounded bg-amber-500 text-black">
@@ -331,7 +331,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         : 'border-white/10 opacity-50 hover:opacity-100'
                     }`}
                   >
-                    <img src={s.cardImage} alt="" className="w-full h-full object-cover filter grayscale" />
+                    <img src={s.cardImage} alt="" className="w-full h-full object-cover object-center filter grayscale" />
                   </div>
                 ))}
               </div>

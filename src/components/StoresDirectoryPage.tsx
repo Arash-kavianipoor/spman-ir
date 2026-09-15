@@ -30,6 +30,7 @@ import {
 import { Store } from '../types';
 import { ADMIN_PHONE } from '../data/storeService';
 import { StoreCard } from './StoreCard';
+import { SingleStoreLeafletMap } from './SingleStoreLeafletMap';
 
 interface StoresDirectoryPageProps {
   stores: Store[];
@@ -224,10 +225,6 @@ export const StoresDirectoryPage: React.FC<StoresDirectoryPageProps> = ({
 
   const activeMapStore =
     stores.find((s) => s.id === activeMapStoreId) || filteredAndSortedStores[0] || stores[0];
-
-  const mapEmbedUrl = activeMapStore
-    ? `https://maps.google.com/maps?q=${activeMapStore.coordinates.lat},${activeMapStore.coordinates.lng}&hl=fa&z=15&output=embed`
-    : '';
 
   return (
     <div className="min-h-screen bg-[#07080c] text-zinc-100 py-6 sm:py-10">
@@ -790,16 +787,16 @@ export const StoresDirectoryPage: React.FC<StoresDirectoryPageProps> = ({
                   ))}
                 </div>
 
-                {/* Live Google Map Container */}
+                {/* Live Leaflet Map Container */}
                 <div className="lg:col-span-7 flex flex-col justify-between space-y-4">
-                  <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-white/10 bg-black/60 shadow-inner">
+                  <div className="relative aspect-[16/10] min-h-[350px] w-full rounded-2xl overflow-hidden border border-white/10 bg-black/60 shadow-inner">
                     {activeMapStore && (
-                      <iframe
-                        title={`نقشه ${activeMapStore.name}`}
-                        src={mapEmbedUrl}
-                        className="w-full h-full border-0"
-                        loading="lazy"
-                        allowFullScreen
+                      <SingleStoreLeafletMap
+                        lat={activeMapStore.coordinates.lat}
+                        lng={activeMapStore.coordinates.lng}
+                        storeName={activeMapStore.name}
+                        storeAddress={activeMapStore.address}
+                        zoom={16}
                       />
                     )}
                   </div>

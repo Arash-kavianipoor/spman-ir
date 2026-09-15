@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import L from 'leaflet';
-import { ZoomIn, ZoomOut, Compass, MousePointerClick, Move, Check, Navigation } from 'lucide-react';
+import { ZoomIn, ZoomOut, Compass, MousePointerClick, RefreshCw, MapPin, Move } from 'lucide-react';
 
 interface LocationPickerMapProps {
   lat: number;
   lng: number;
-  onChangeLocation: (lat: number, lng: number) => void;
+  onLocationChange?: (lat: number, lng: number) => void;
+  onChangeLocation?: (lat: number, lng: number) => void;
   city?: string;
   area?: string;
 }
@@ -13,152 +14,175 @@ interface LocationPickerMapProps {
 export const LocationPickerMap: React.FC<LocationPickerMapProps> = ({
   lat,
   lng,
+  onLocationChange,
   onChangeLocation,
+  city,
+  area,
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const tileLayerRef = useRef<L.TileLayer | null>(null);
-  
-  const [mapStyle, setMapStyle] = useState<'streets' | 'satellite' | 'dark'>('streets');
-  const [isMoving, setIsMoving] = useState(false);
-  const [currentCoords, setCurrentCoords] = useState<{ lat: number; lng: number }>({
-    lat: lat || 35.6812,
-    lng: lng || 51.3995,
-  });
+  const isUserInteractingRef = useRef<boolean>(false);
 
-  const isUserInteractingRef = useRef(false);
-  const onChangeLocationRef = useRef(onChangeLocation);
-  onChangeLocationRef.current = onChangeLocation;
-
-  // Initialize Leaflet Map
+  // Safe handler callback supporting either prop name
+  const notifyChangeRef = useRef<(newLat: number, newLng: number) => void>(() => {});
   useEffect(() => {
+    notifyChangeRef.current = (newLat: number, newLng: number) => {
+      if (typeof onLocationChange === 'function') {
+        onLocationChange(newLat, newLng);
+      }
+      if (typeof onChangeLocation === 'function') {
+        onChangeLocation(newLat, newLng);
+      }
+    };
+  }, [onLocationChange, onChangeLocation]);
+
+  const [currentCoords, setCurrentCoords] = useState<{ lat: number; lng: number }>({ lat, lng });
+  const [isMoving, setIsMoving] = useState<boolean>(false);
+  const [hasMapError, setHasMapError] = useState<boolean>(false);
+  const [retryCount, setRetryCount] = useState<number>(0);
+
+  // Initialize Leaflet Map safely in try-catch with OpenStreetMap (100% Free, NO API Key)
+  useEffect(() => {
+    setHasMapError(false);
     if (!mapContainerRef.current) return;
-    if (mapInstanceRef.current) return;
 
-    const initialLat = lat || 35.6812;
-    const initialLng = lng || 51.3995;
+    try {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove();
+        mapInstanceRef.current = null;
+      }
 
-    const map = L.map(mapContainerRef.current, {
-      center: [initialLat, initialLng],
-      zoom: 16,
-      minZoom: 4,
-      maxZoom: 19,
-      zoomControl: false,
-      scrollWheelZoom: true,
-      doubleClickZoom: true,
-      touchZoom: true,
-      dragging: true,
-      inertia: true,
-      inertiaDeceleration: 3000,
-    });
-
-    // When map starts moving (panning, scrolling, zooming)
-    map.on('movestart', () => {
-      isUserInteractingRef.current = true;
-      setIsMoving(true);
-    });
-
-    // When map is moving: update local coordinate display without triggering heavy parent re-renders
-    map.on('move', () => {
-      const center = map.getCenter();
-      setCurrentCoords({
-        lat: parseFloat(center.lat.toFixed(6)),
-        lng: parseFloat(center.lng.toFixed(6)),
+      const map = L.map(mapContainerRef.current, {
+        center: [lat, lng],
+        zoom: 15,
+        minZoom: 4,
+        maxZoom: 19,
+        zoomControl: false,
+        scrollWheelZoom: true,
       });
-    });
 
-    // When map stops moving (drag end / scroll zoom end / pan end)
-    map.on('moveend', () => {
-      setIsMoving(false);
-      const center = map.getCenter();
-      const finalLat = parseFloat(center.lat.toFixed(6));
-      const finalLng = parseFloat(center.lng.toFixed(6));
-      
-      setCurrentCoords({ lat: finalLat, lng: finalLng });
-      
-      // Notify parent form only when movement finishes cleanly
-      onChangeLocationRef.current(finalLat, finalLng);
-      
-      setTimeout(() => {
+      // ONLY pure OpenStreetMap tiles
+      const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+        subdomains: ['a', 'b', 'c'],
+      });
+
+      osmLayer.addTo(map);
+      tileLayerRef.current = osmLayer;
+
+      mapInstanceRef.current = map;
+
+      // Event listeners for dragging map & picking coordinates
+      map.on('movestart', () => {
+        isUserInteractingRef.current = true;
+        setIsMoving(true);
+      });
+
+      map.on('move', () => {
+        const center = map.getCenter();
+        setCurrentCoords({ lat: center.lat, lng: center.lng });
+      });
+
+      map.on('moveend', () => {
+        const center = map.getCenter();
+        setCurrentCoords({ lat: center.lat, lng: center.lng });
+        setIsMoving(false);
+        notifyChangeRef.current(center.lat, center.lng);
         isUserInteractingRef.current = false;
-      }, 100);
-    });
+      });
 
-    // Click anywhere on map to pan smoothly to that spot
-    map.on('click', (e: L.LeafletMouseEvent) => {
-      map.panTo(e.latlng, { animate: true, duration: 0.35 });
-    });
+      // Click to center
+      map.on('click', (e: L.LeafletMouseEvent) => {
+        map.panTo(e.latlng, { animate: true, duration: 0.3 });
+      });
 
-    mapInstanceRef.current = map;
+      const timer1 = setTimeout(() => {
+        try { map.invalidateSize(); } catch {}
+      }, 200);
+      const timer2 = setTimeout(() => {
+        try { map.invalidateSize(); } catch {}
+      }, 600);
+
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      };
+    } catch (err) {
+      console.warn('LocationPickerMap init error:', err);
+      setHasMapError(true);
+    }
 
     return () => {
-      map.remove();
-      mapInstanceRef.current = null;
+      try {
+        if (mapInstanceRef.current) {
+          mapInstanceRef.current.remove();
+          mapInstanceRef.current = null;
+        }
+      } catch {}
     };
-  }, []);
+  }, [retryCount]);
 
-  // Update Tile Layer when mapStyle changes
+  // Sync map center when coordinates change from outside
   useEffect(() => {
-    const map = mapInstanceRef.current;
-    if (!map) return;
-
-    if (tileLayerRef.current) {
-      map.removeLayer(tileLayerRef.current);
-    }
-
-    let tileUrl = '';
-    let attribution = '';
-
-    if (mapStyle === 'dark') {
-      tileUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-      attribution = '&copy; <a href="https://carto.com/">CARTO</a>';
-    } else if (mapStyle === 'satellite') {
-      tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
-      attribution = 'Tiles &copy; Esri';
-    } else {
-      tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-    }
-
-    const newTileLayer = L.tileLayer(tileUrl, {
-      attribution,
-      maxZoom: 19,
-      subdomains: 'abcd',
-    }).addTo(map);
-
-    tileLayerRef.current = newTileLayer;
-  }, [mapStyle]);
-
-  // Sync map center when coordinates change from outside (GPS button, Presets, Step buttons)
-  useEffect(() => {
-    // If the change came from the user moving the map, do not re-pan
-    if (isUserInteractingRef.current) return;
+    if (isUserInteractingRef.current || hasMapError) return;
 
     const map = mapInstanceRef.current;
     if (!map) return;
 
-    const center = map.getCenter();
-    const distance = Math.hypot(center.lat - lat, center.lng - lng);
+    try {
+      const center = map.getCenter();
+      const distance = Math.hypot(center.lat - lat, center.lng - lng);
 
-    if (distance > 0.0001) {
-      map.panTo([lat, lng], { animate: true, duration: 0.3 });
-      setCurrentCoords({ lat, lng });
-    }
-  }, [lat, lng]);
+      if (distance > 0.0001) {
+        map.panTo([lat, lng], { animate: true, duration: 0.3 });
+        setCurrentCoords({ lat, lng });
+      }
+    } catch {}
+  }, [lat, lng, hasMapError]);
 
   const handleZoomIn = useCallback(() => {
-    mapInstanceRef.current?.zoomIn();
+    try {
+      mapInstanceRef.current?.zoomIn();
+    } catch {}
   }, []);
 
   const handleZoomOut = useCallback(() => {
-    mapInstanceRef.current?.zoomOut();
+    try {
+      mapInstanceRef.current?.zoomOut();
+    } catch {}
   }, []);
 
   const handleRecenter = useCallback(() => {
-    if (mapInstanceRef.current) {
-      mapInstanceRef.current.setView([lat, lng], 16, { animate: true });
-    }
+    try {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.setView([lat, lng], 16, { animate: true });
+      }
+    } catch {}
   }, [lat, lng]);
+
+  if (hasMapError) {
+    return (
+      <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] min-h-[300px] rounded-2xl overflow-hidden border border-amber-500/20 bg-gradient-to-b from-[#12141f] to-[#0a0c14] p-6 flex flex-col items-center justify-center text-center space-y-4">
+        <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+          <MapPin className="w-6 h-6" />
+        </div>
+        <div className="space-y-1">
+          <h4 className="text-base font-bold text-white">سامانه نقشه انتخاب موقعیت</h4>
+          <p className="text-xs text-zinc-400">می‌توانید مختصات را مستقیماً در کادرهای بالا وارد کنید یا نقشه را مجدداً بارگذاری فرمایید.</p>
+        </div>
+        <button
+          type="button"
+          onClick={() => setRetryCount((c) => c + 1)}
+          className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs flex items-center gap-2 cursor-pointer shadow-lg shadow-amber-500/20"
+        >
+          <RefreshCw className="w-4 h-4" />
+          <span>بارگذاری مجدد نقشه</span>
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] min-h-[350px] rounded-2xl overflow-hidden border border-white/15 bg-[#0a0c14] shadow-inner select-none">
@@ -169,9 +193,7 @@ export const LocationPickerMap: React.FC<LocationPickerMapProps> = ({
         className="w-full h-full z-0 cursor-grab active:cursor-grabbing"
       />
 
-      {/* ========================================================================= */}
-      {/* CENTER PIN (SNAPP / GOOGLE MAPS / UBER STYLE ULTRA SMOOTH PIN) */}
-      {/* ========================================================================= */}
+      {/* CENTER PIN */}
       <div className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center">
         
         {/* Container anchored to exact center */}
@@ -198,7 +220,7 @@ export const LocationPickerMap: React.FC<LocationPickerMapProps> = ({
             )}
           </div>
 
-          {/* Glowing Target Ground Ring on exact center */}
+          {/* Ground Ring on exact center */}
           <div 
             className={`absolute bottom-0 w-8 h-3 rounded-full transition-all duration-200 ${
               isMoving 
@@ -279,41 +301,11 @@ export const LocationPickerMap: React.FC<LocationPickerMapProps> = ({
         </button>
       </div>
 
-      {/* Map Style Selector (Bottom-Left) */}
-      <div className="absolute bottom-4 left-4 z-30 flex items-center gap-1 bg-black/80 backdrop-blur-md p-1 rounded-xl border border-white/15 text-[11px]">
-        <button
-          type="button"
-          onClick={() => setMapStyle('streets')}
-          className={`px-2.5 py-1 rounded-lg font-medium transition-all cursor-pointer ${
-            mapStyle === 'streets'
-              ? 'bg-amber-500 text-black font-bold shadow-sm'
-              : 'text-zinc-300 hover:text-white'
-          }`}
-        >
-          خیابان
-        </button>
-        <button
-          type="button"
-          onClick={() => setMapStyle('satellite')}
-          className={`px-2.5 py-1 rounded-lg font-medium transition-all cursor-pointer ${
-            mapStyle === 'satellite'
-              ? 'bg-amber-500 text-black font-bold shadow-sm'
-              : 'text-zinc-300 hover:text-white'
-          }`}
-        >
-          ماهواره‌ای
-        </button>
-        <button
-          type="button"
-          onClick={() => setMapStyle('dark')}
-          className={`px-2.5 py-1 rounded-lg font-medium transition-all cursor-pointer ${
-            mapStyle === 'dark'
-              ? 'bg-amber-500 text-black font-bold shadow-sm'
-              : 'text-zinc-300 hover:text-white'
-          }`}
-        >
-          نقشه روشن
-        </button>
+      {/* Attribution tag */}
+      <div className="absolute bottom-2 left-2 z-30 pointer-events-none">
+        <div className="bg-black/80 backdrop-blur-sm border border-white/10 px-2 py-0.5 rounded-lg text-[9px] text-zinc-400">
+          OpenStreetMap &copy;
+        </div>
       </div>
 
     </div>

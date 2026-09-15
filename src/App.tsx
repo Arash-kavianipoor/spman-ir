@@ -11,10 +11,14 @@ import { ContactAdminSection } from './components/ContactAdminSection';
 import { StoresDirectoryPage } from './components/StoresDirectoryPage';
 import { StoresMapPage } from './components/StoresMapPage';
 import { AboutUsPage } from './components/AboutUsPage';
+import { UserDashboard } from './components/UserDashboard';
+import { AdminPanel } from './components/AdminPanel';
+import { AuthModal } from './components/AuthModal';
 import { Footer } from './components/Footer';
 import { SEOHead } from './components/SEOHead';
 import { fetchStores, fetchEquipment, ADMIN_PHONE } from './data/storeService';
-import { Store, EquipmentItem } from './types';
+import { getCurrentUser, logoutUser } from './services/authService';
+import { Store, EquipmentItem, User } from './types';
 import { Store as StoreIcon, Filter, Layers, CheckCircle2, Phone, Search, SlidersHorizontal, ArrowLeft, Sparkles, MapPin } from 'lucide-react';
 
 export default function App() {
@@ -22,8 +26,14 @@ export default function App() {
   const [equipment, setEquipment] = useState<EquipmentItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  // View Routing: 'home' | 'stores-page' | 'map-page' | 'about-page'
-  const [currentView, setCurrentView] = useState<'home' | 'stores-page' | 'map-page' | 'about-page'>('home');
+  // User Auth State
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const [authModalOpen, setAuthModalOpen] = useState(false);
+  const [authModalMode, setAuthModalMode] = useState<'login' | 'register' | 'verify'>('login');
+  const [authModalEmail, setAuthModalEmail] = useState('');
+
+  // View Routing: 'home' | 'stores-page' | 'map-page' | 'about-page' | 'dashboard' | 'admin'
+  const [currentView, setCurrentView] = useState<'home' | 'stores-page' | 'map-page' | 'about-page' | 'dashboard' | 'admin'>('home');
   const [categoryFilterForDirectory, setCategoryFilterForDirectory] = useState<string>('');
 
   // Search and Filter States for Home Page Preview
@@ -35,7 +45,7 @@ export default function App() {
   const [mapModalStore, setMapModalStore] = useState<Store | null>(null);
   const [detailModalStore, setDetailModalStore] = useState<Store | null>(null);
 
-  // Fetch dynamic data from JSON folder
+  // Fetch dynamic data & auth status
   useEffect(() => {
     async function loadData() {
       try {
@@ -52,7 +62,27 @@ export default function App() {
       }
     }
     loadData();
+    setCurrentUser(getCurrentUser());
   }, []);
+
+  const handleAuthSuccess = (user: User) => {
+    setCurrentUser(user);
+    setAuthModalOpen(false);
+  };
+
+  const handleLogout = () => {
+    logoutUser();
+    setCurrentUser(null);
+    if (currentView === 'dashboard' || currentView === 'admin') {
+      setCurrentView('home');
+    }
+  };
+
+  const openAuthModal = (mode: 'login' | 'register' | 'verify', email?: string) => {
+    setAuthModalMode(mode);
+    if (email) setAuthModalEmail(email);
+    setAuthModalOpen(true);
+  };
 
   // Available unique cities for filtering
   const availableCities = Array.from(new Set(stores.map((s) => s.city)));
@@ -91,6 +121,26 @@ export default function App() {
     if (sectionId === 'map-page' || sectionId === 'map-view') {
       setCurrentView('map-page');
       setActiveSection('map-view');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (sectionId === 'dashboard') {
+      if (currentUser) {
+        setCurrentView('dashboard');
+      } else {
+        openAuthModal('login');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (sectionId === 'admin') {
+      if (currentUser && currentUser.role === 'admin') {
+        setCurrentView('admin');
+      } else {
+        openAuthModal('login');
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -138,8 +188,28 @@ export default function App() {
       {/* Main Content Area */}
       <main className="flex-1">
         
-        {/* VIEW 1: DEDICATED STORES PAGE WITH ADVANCED FILTERS */}
-        {currentView === 'stores-page' ? (
+        {/* VIEW: ADMIN PANEL */}
+        {currentView === 'admin' ? (
+          <AdminPanel
+            onBackToHome={() => {
+              setCurrentView('home');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
+        ) : currentView === 'dashboard' && currentUser ? (
+          /* VIEW: USER DASHBOARD */
+          <UserDashboard
+            user={currentUser}
+            onLogout={handleLogout}
+            onNavigate={handleNavigate}
+            onOpenVerifyModal={(email) => openAuthModal('verify', email)}
+            onOpenAdminPanel={() => {
+              setCurrentView('admin');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
+        ) : currentView === 'stores-page' ? (
+          /* VIEW 1: DEDICATED STORES PAGE WITH ADVANCED FILTERS */
           <StoresDirectoryPage
             stores={stores}
             onBackToHome={() => {
@@ -217,7 +287,7 @@ export default function App() {
                       فروشگاه‌های معتبر لوازم ورزشی
                     </h2>
                     <p className="text-sm text-zinc-400 max-w-xl font-normal">
-                      همراه با ۳ عکس اختصاصی، شماره‌های تماس موبایل و ثابت، نقشه زنده گوگل و آدرس دقیق
+                      همراه با ۳ عکس اختصاصی، شماره‌های تماس موبایل و ثابت، نقشه تعاملی و آدرس دقیق
                     </p>
                   </div>
 
@@ -319,8 +389,26 @@ export default function App() {
 
       </main>
 
-      {/* Footer */}
-      <Footer onNavigate={handleNavigate} />
+      {/* Footer (با دکمه‌های ورود و ثبت نام اختصاصی) */}
+      <Footer 
+        onNavigate={handleNavigate}
+        currentUser={currentUser}
+        onOpenAuthModal={(mode) => openAuthModal(mode)}
+        onOpenDashboard={() => handleNavigate('dashboard')}
+        onOpenAdminPanel={() => handleNavigate('admin')}
+        onLogout={handleLogout}
+      />
+
+      {/* Auth & Verification Modal */}
+      {authModalOpen && (
+        <AuthModal
+          isOpen={authModalOpen}
+          initialMode={authModalMode}
+          initialEmail={authModalEmail}
+          onClose={() => setAuthModalOpen(false)}
+          onSuccess={handleAuthSuccess}
+        />
+      )}
 
       {/* Live Google Maps Modal */}
       {mapModalStore && (

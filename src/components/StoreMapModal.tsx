@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, MapPin, Navigation, ExternalLink, Phone, Smartphone, Copy, Check } from 'lucide-react';
 import { Store } from '../types';
+import { SingleStoreLeafletMap } from './SingleStoreLeafletMap';
 
 interface StoreMapModalProps {
   store: Store | null;
@@ -13,7 +14,7 @@ export const StoreMapModal: React.FC<StoreMapModalProps> = ({ store, onClose }) 
   if (!store) return null;
 
   const { lat, lng } = store.coordinates;
-  const mapEmbedUrl = `https://maps.google.com/maps?q=${lat},${lng}&hl=fa&z=16&output=embed`;
+  const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=16/${lat}/${lng}`;
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
   const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
   const neshanUrl = `https://neshan.org/maps/@${lat},${lng},16z`;
@@ -52,23 +53,23 @@ export const StoreMapModal: React.FC<StoreMapModalProps> = ({ store, onClose }) 
 
           <button
             onClick={onClose}
-            className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-white flex items-center justify-center transition-all"
+            className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/15 text-zinc-400 hover:text-white flex items-center justify-center transition-all cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Modal Body: Map & Info */}
+        {/* Modal Body: Leaflet Map & Info */}
         <div className="flex-1 overflow-y-auto p-5 space-y-5">
           
-          {/* Live Google Maps Iframe */}
-          <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full rounded-2xl overflow-hidden border border-white/10 bg-black/60 shadow-inner">
-            <iframe
-              title={`نقشه زنده ${store.name}`}
-              src={mapEmbedUrl}
-              className="w-full h-full border-0"
-              loading="lazy"
-              allowFullScreen
+          {/* Live Leaflet Map (OpenStreetMap - 100% Free & No API Key Required) */}
+          <div className="relative aspect-[16/9] sm:aspect-[21/9] min-h-[300px] w-full rounded-2xl overflow-hidden border border-white/10 bg-black/60 shadow-inner">
+            <SingleStoreLeafletMap
+              lat={lat}
+              lng={lng}
+              storeName={store.name}
+              storeAddress={store.address}
+              zoom={16}
             />
           </div>
 
@@ -100,7 +101,7 @@ export const StoreMapModal: React.FC<StoreMapModalProps> = ({ store, onClose }) 
                   <span className="text-xs font-bold text-zinc-400">مختصات جغرافیایی (JSON Lat, Lng):</span>
                   <button
                     onClick={copyCoordinates}
-                    className="text-[11px] text-amber-400 hover:text-amber-300 flex items-center gap-1 bg-amber-500/10 px-2 py-0.5 rounded-lg border border-amber-500/20"
+                    className="text-[11px] text-amber-400 hover:text-amber-300 flex items-center gap-1 bg-amber-500/10 px-2 py-0.5 rounded-lg border border-amber-500/20 cursor-pointer"
                   >
                     {copied ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
                     <span>{copied ? 'کپی شد' : 'کپی مختصات'}</span>
@@ -113,25 +114,16 @@ export const StoreMapModal: React.FC<StoreMapModalProps> = ({ store, onClose }) 
 
               {/* Navigation App Buttons */}
               <div className="space-y-1.5 pt-2 border-t border-white/10">
-                <span className="text-[11px] text-zinc-400 font-semibold block">مسیریابی در اپلیکیشن‌های نقشه:</span>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <span className="text-[11px] text-zinc-400 font-semibold block">مسیریابی در نقشه‌ها و اپلیکیشن‌ها:</span>
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
                   <a
-                    href={googleMapsUrl}
+                    href={osmUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1.5 bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/30 rounded-xl py-2 text-xs font-bold transition-all"
+                    className="flex items-center justify-center gap-1.5 bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 rounded-xl py-2 text-xs font-bold transition-all"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
-                    <span>گوگل مپ</span>
-                  </a>
-                  <a
-                    href={wazeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1.5 bg-sky-500/20 hover:bg-sky-500 text-sky-300 hover:text-white border border-sky-500/30 rounded-xl py-2 text-xs font-bold transition-all"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    <span>ویز (Waze)</span>
+                    <span>OpenStreetMap</span>
                   </a>
                   <a
                     href={neshanUrl}
@@ -146,10 +138,28 @@ export const StoreMapModal: React.FC<StoreMapModalProps> = ({ store, onClose }) 
                     href={baladUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1.5 bg-emerald-500/20 hover:bg-emerald-500 text-emerald-300 hover:text-white border border-emerald-500/30 rounded-xl py-2 text-xs font-bold transition-all"
+                    className="flex items-center justify-center gap-1.5 bg-teal-500/20 hover:bg-teal-500 text-teal-300 hover:text-white border border-teal-500/30 rounded-xl py-2 text-xs font-bold transition-all"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
                     <span>بلد</span>
+                  </a>
+                  <a
+                    href={wazeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 bg-sky-500/20 hover:bg-sky-500 text-sky-300 hover:text-white border border-sky-500/30 rounded-xl py-2 text-xs font-bold transition-all"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>ویز (Waze)</span>
+                  </a>
+                  <a
+                    href={googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/30 rounded-xl py-2 text-xs font-bold transition-all col-span-2 sm:col-span-1"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>گوگل مپ</span>
                   </a>
                 </div>
               </div>

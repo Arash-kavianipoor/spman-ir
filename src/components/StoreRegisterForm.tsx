@@ -644,6 +644,13 @@ export const StoreRegisterForm: React.FC = () => {
                 <LocationPickerMap
                   lat={latNum}
                   lng={lngNum}
+                  onLocationChange={(newLat, newLng) => {
+                    setFormData((prev) => ({
+                      ...prev,
+                      lat: newLat.toFixed(6),
+                      lng: newLng.toFixed(6),
+                    }));
+                  }}
                   onChangeLocation={(newLat, newLng) => {
                     setFormData((prev) => ({
                       ...prev,
@@ -710,12 +717,22 @@ export const StoreRegisterForm: React.FC = () => {
                     </div>
 
                     <a
+                      href={`https://www.openstreetmap.org/?mlat=${latNum}&mlon=${lngNum}#map=16/${latNum}/${lngNum}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[11px] text-emerald-400 hover:text-emerald-300 flex items-center gap-1 bg-emerald-500/10 px-3 py-1.5 rounded-xl border border-emerald-500/20"
+                      title="OpenStreetMap"
+                    >
+                      <span>تست در OSM</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                    <a
                       href={`https://maps.google.com/?q=${latNum},${lngNum}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[11px] text-amber-400 hover:text-amber-300 flex items-center gap-1 bg-amber-500/10 px-3 py-1.5 rounded-xl border border-amber-500/20"
                     >
-                      <span>تست لینک نقشه</span>
+                      <span>گوگل مپ</span>
                       <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>
