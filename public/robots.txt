@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap & LLMs Manifest
 Sitemap: https://spman.ir/sitemap.xml
+

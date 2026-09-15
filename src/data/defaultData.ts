@@ -25,7 +25,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://olympicsport.ir",
     images: [
-      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "/assets/images/sports_equipment_store_1788108231956.webp",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -59,9 +59,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://giantstore-tehran.com",
     images: [
-      "/assets/images/cyclist_hero_velmont_1788013387338.jpg",
+      "/assets/images/cyclist_hero_velmont_1788013387338.webp",
       "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/cyclist_motion_card_1788013401900.jpg"
+      "/assets/images/cyclist_motion_card_1788013401900.webp"
     ],
     description: "نمایندگی رسمی دوچرخه‌های کورسی، کوهستان، شهری و برقی برند جاینت و ویوا. عرضه کلاه ایمنی استاندارد، دستکش ژله‌ای، عینک یووی۴۰۰ و قطعات شیمانو.",
     workingHours: "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
@@ -93,7 +93,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://powergymshiraz.ir",
     images: [
-      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "/assets/images/sports_equipment_store_1788108231956.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -127,7 +127,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://zagrossport.com",
     images: [
-      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "/assets/images/sportswear_accessories_1788108259695.webp",
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -161,7 +161,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://hirmandsports.ir",
     images: [
-      "/assets/images/female_stretching_mat_1788014368101.jpg",
+      "/assets/images/female_stretching_mat_1788014368101.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -195,7 +195,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://alborzsport.ir",
     images: [
-      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "/assets/images/sports_equipment_store_1788108231956.webp",
       "https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -229,8 +229,8 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://titangym.ir",
     images: [
-      "/assets/images/modern_gym_club_1788108245339.jpg",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "/assets/images/modern_gym_club_1788108245339.webp",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp",
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
     ],
     description: "مجهزترین باشگاه بدنسازی و فیتنس VIP با جدیدترین دستگاه‌های DHZ و تکنو جیم، سالن مجزای کراس‌فیت و تی‌آر‌ایکس، بوفه سلامت، سونا و جکوزی با حضور مربیان رسمی فدراسیون.",
@@ -263,7 +263,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://razmarasport.com",
     images: [
-      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "/assets/images/sports_equipment_store_1788108231956.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -297,9 +297,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://scott-iran.com",
     images: [
-      "/assets/images/cyclist_hero_velmont_1788013387338.jpg",
+      "/assets/images/cyclist_hero_velmont_1788013387338.webp",
       "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/cyclist_motion_card_1788013401900.jpg"
+      "/assets/images/cyclist_motion_card_1788013401900.webp"
     ],
     description: "عرضه‌کننده رسمی دوچرخه‌های سوئیسی اسکات، لباس‌های آیرودینامیک، کفش‌های فیکس رکاب، تلمبه‌های حرفه‌ای و تجهیزات سرویس دوره‌ای دوچرخه.",
     workingHours: "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
@@ -331,9 +331,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://samfitclub.ir",
     images: [
-      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "/assets/images/modern_gym_club_1788108245339.webp",
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp"
     ],
     description: "باشگاه پریمیوم فیتنس شمال تهران با جدیدترین لاین دستگاه‌های ماتریس آمریکا، فضای تخصصی تمرینات فانکشنال، آنالیز اینبادی رایگان و برنامه تمرینی اختصاصی.",
     workingHours: "شنبه تا پنج‌شنبه: ۶:۳۰ الی ۲۳:۳۰ | جمعه‌ها: ۱۰:۰۰ الی ۱۸:۰۰",
@@ -365,7 +365,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://pouyasport.ir",
     images: [
-      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "/assets/images/sports_equipment_store_1788108231956.webp",
       "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -399,7 +399,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://caspiansport.ir",
     images: [
-      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "/assets/images/sportswear_accessories_1788108259695.webp",
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -433,7 +433,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://niloofaryoga.com",
     images: [
-      "/assets/images/female_stretching_mat_1788014368101.jpg",
+      "/assets/images/female_stretching_mat_1788014368101.webp",
       "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -467,9 +467,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://crossahvaz.ir",
     images: [
-      "/assets/images/cyclist_hero_velmont_1788013387338.jpg",
+      "/assets/images/cyclist_hero_velmont_1788013387338.webp",
       "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/cyclist_motion_card_1788013401900.jpg"
+      "/assets/images/cyclist_motion_card_1788013401900.webp"
     ],
     description: "نمایندگی دوچرخه‌های کراس و فلش، قطعات یدکی دنده و ترمز، کلاه‌های ایمنی دارای چراغ هشدار و قمقمه‌های دوجداره عایق حرارتی.",
     workingHours: "همه روزه: ۱۷:۰۰ الی ۲۳:۳۰",
@@ -501,8 +501,8 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://oxygenclub.ir",
     images: [
-      "/assets/images/modern_gym_club_1788108245339.jpg",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "/assets/images/modern_gym_club_1788108245339.webp",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
     ],
     description: "کلاب ورزشی فوق‌مدرن با سالن‌های مجزای تمرینات وزنه‌برداری قدرتی، پیلاتس کادیلاک و ریفرمر، رینگ بوکس و کافی‌شاپ ورزشی ارگانیک.",
@@ -535,7 +535,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://atlassport-qom.ir",
     images: [
-      "/assets/images/sports_equipment_store_1788108231956.jpg",
+      "/assets/images/sports_equipment_store_1788108231956.webp",
       "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -569,7 +569,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://moniriyehsport.ir",
     images: [
-      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "/assets/images/sportswear_accessories_1788108259695.webp",
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -603,8 +603,8 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://champherogym.ir",
     images: [
-      "/assets/images/modern_gym_club_1788108245339.jpg",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "/assets/images/modern_gym_club_1788108245339.webp",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp",
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
     ],
     description: "باشگاه اختصاصی بدنسازی با رک‌های وزنه‌برداری المپیکی، سالن مجزای کراس‌فیت و کالیستنیکس، بوفه رژیمی پروتئینی و مربیان قهرمان کشور.",
@@ -637,7 +637,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://nikecentermhd.ir",
     images: [
-      "/assets/images/sportswear_accessories_1788108259695.jpg",
+      "/assets/images/sportswear_accessories_1788108259695.webp",
       "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -671,9 +671,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://enghelabsport.ir",
     images: [
-      "/assets/images/modern_gym_club_1788108245339.jpg",
+      "/assets/images/modern_gym_club_1788108245339.webp",
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/female_stretching_mat_1788014368101.jpg"
+      "/assets/images/female_stretching_mat_1788014368101.webp"
     ],
     description: "بزرگترین دهکده ورزشی پایتخت شامل جاده تندرستی، سالن‌های بدنسازی VIP، استخرهای روباز و سرپوشیده، سالن پدل و تنیس، پیست مینی‌گلف و سالن‌های تخصصی پیلاتس.",
     workingHours: "همه روزه: ۶:۰۰ الی ۲۳:۳۰",
@@ -706,7 +706,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://proteinking.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -740,7 +740,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://daroubeigi.com",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -774,9 +774,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://bodyman.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp"
     ],
     description: "نمایندگی رسمی برندهای مطرح مکمل با ضمانت ۱۰۰٪ اصالت کالا و کد استعلام پیامکی TTAC، ارسال فوری به تمام نقاط تهران و کشور.",
     workingHours: "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۱:۳۰",
@@ -808,7 +808,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://ariasupplement.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -842,7 +842,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://naseripharmacy.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -876,8 +876,8 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://iranmuscle-mashhad.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
     description: "پخش تخصصی مکمل‌های ورزشی برندهای دوبیس، ژن استار، ویتاپی، اپکس و پی‌ان‌سی با لیبل اصالت کالا و مشاوره تغذیه.",
@@ -910,7 +910,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://sotoudehpharmacy.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -944,9 +944,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://maxpharma.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/female_stretching_mat_1788014368101.jpg"
+      "/assets/images/female_stretching_mat_1788014368101.webp"
     ],
     description: "عرضه محصولات پروتئینی، کلاژن ورزشی، مکمل‌های چربی‌سوز ترموژنیک، ال‌سیترولین و بی سی ای ای با تاریخ مصرف بالا و استعلام رسمی.",
     workingHours: "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۲:۰۰",
@@ -978,7 +978,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://karensport.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -1012,7 +1012,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://abresanpharma.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -1046,9 +1046,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://fitmaxrasht.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp"
     ],
     description: "ارائه انواع پروتئین وی ۱۰۰٪، کازئین، کراتین کریپوری، اسیدهای آمینه ضروری EAA و آمینو انرژی همراه با ارسال رایگان در شهر رشت.",
     workingHours: "شنبه تا پنج‌شنبه: ۱۰:۰۰ الی ۲۲:۰۰",
@@ -1080,7 +1080,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://khuzestannutrition.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -1114,9 +1114,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://darouboom.com",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/female_stretching_mat_1788014368101.jpg"
+      "/assets/images/female_stretching_mat_1788014368101.webp"
     ],
     description: "پلتفرم جامع توزیع مکمل‌های تغذیه‌ای و ورزشی دارای هولوگرام سازمان غذا و دارو، مشاوره آنلاین کارشناسان تغذیه و تحویل فوری ۲ ساعته در تهران.",
     workingHours: "همه روزه: ۲۴ ساعته (سفارش آنلاین)",
@@ -1148,7 +1148,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://nutritionplus-qom.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -1182,9 +1182,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://powerbuildshop.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp"
     ],
     description: "مرکز تخصصی پروتئین‌های اورجینال شرق تهران، فروش گینرهای باکیفیت جهت افزایش وزن، پروتئین وی کنسانتره و شیکرهای برقی شارژی.",
     workingHours: "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
@@ -1216,7 +1216,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://heroesnutrition-yazd.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -1250,9 +1250,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://fitnesspharm.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp"
     ],
     description: "مرکز تخصصی پخش مکمل‌های اورجینال بدنسازی و پرورش اندام غرب کشور با تاییدیه‌های بهداشتی و مشاوره رایگان تناسب اندام.",
     workingHours: "همه روزه: ۹:۳۰ الی ۱۳:۳۰ و ۱۶:۳۰ الی ۲۱:۳۰",
@@ -1284,7 +1284,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://arshidapharma.com",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],
@@ -1318,9 +1318,9 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://olympicprotein-shiraz.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=1000&auto=format&fit=crop",
-      "/assets/images/male_bodybuilder_dumbbell_1788014381969.jpg"
+      "/assets/images/male_bodybuilder_dumbbell_1788014381969.webp"
     ],
     description: "نمایندگی معتبر مکمل‌های تناسب اندام، پودرهای چربی سوز، پروتئین وی ایزوله رژیمی، بارهای پروتئینی و کره‌های بادام زمینی رژیمی.",
     workingHours: "همه روزه: ۱۰:۰۰ الی ۲۲:۰۰",
@@ -1352,7 +1352,7 @@ export const INITIAL_STORES: Store[] = [
     },
     website: "https://asgharipharmacy.ir",
     images: [
-      "/assets/images/supplement_store_interior_1788108218506.jpg",
+      "/assets/images/supplement_store_interior_1788108218506.webp",
       "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1000&auto=format&fit=crop"
     ],

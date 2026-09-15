@@ -101,6 +101,10 @@ export const StoreDetailModal: React.FC<StoreDetailModalProps> = ({ store, onClo
               <img
                 src={images[selectedPhotoIndex]}
                 alt={`${store.name} عکس ${selectedPhotoIndex + 1}`}
+                width="800"
+                height="450"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-all duration-300"
               />
               <div className="absolute bottom-3 right-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white border border-white/10">
@@ -120,7 +124,15 @@ export const StoreDetailModal: React.FC<StoreDetailModalProps> = ({ store, onClo
                       : 'border-white/10 opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <img src={img} alt="" className="w-full h-full object-cover" />
+                  <img 
+                    src={img} 
+                    alt={`${store.name} بندانگشتی شماره ${idx + 1}`} 
+                    width="200" 
+                    height="125" 
+                    loading="lazy" 
+                    decoding="async" 
+                    className="w-full h-full object-cover" 
+                  />
                   <span className="absolute bottom-1 right-1.5 text-[10px] bg-black/70 px-1.5 py-0.5 rounded text-white font-mono">
                     عکس {idx + 1}
                   </span>

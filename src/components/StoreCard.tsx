@@ -56,7 +56,10 @@ export const StoreCard: React.FC<StoreCardProps> = ({ store, onOpenMap, onOpenDe
         <img
           src={storeImages[currentImageIndex]}
           alt={`${store.name} - تصویر شماره ${currentImageIndex + 1}`}
+          width="600"
+          height="375"
           loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 

@@ -20,16 +20,16 @@ import {
 import { ADMIN_PHONE } from '../data/storeService';
 
 // Slide 1: Cycling
-import heroCyclistImage from '../assets/images/cyclist_hero_velmont_1788013387338.jpg';
-import motionCyclistCardImage from '../assets/images/cyclist_motion_card_1788013401900.jpg';
+import heroCyclistImage from '../assets/images/cyclist_hero_velmont_1788013387338.webp';
+import motionCyclistCardImage from '../assets/images/cyclist_motion_card_1788013401900.webp';
 
 // Slide 2: Female Yoga / Stretching
-import heroFemaleStretchingImage from '../assets/images/female_stretching_mat_1788014368101.jpg';
-import motionStretchingCardImage from '../assets/images/stretching_action_bw_1788014395455.jpg';
+import heroFemaleStretchingImage from '../assets/images/female_stretching_mat_1788014368101.webp';
+import motionStretchingCardImage from '../assets/images/stretching_action_bw_1788014395455.webp';
 
 // Slide 3: Male Bodybuilder / Dumbbell
-import heroMaleBodybuilderImage from '../assets/images/male_bodybuilder_dumbbell_1788014381969.jpg';
-import motionBodybuildingCardImage from '../assets/images/bodybuilding_action_bw_1788014408431.jpg';
+import heroMaleBodybuilderImage from '../assets/images/male_bodybuilder_dumbbell_1788014381969.webp';
+import motionBodybuildingCardImage from '../assets/images/bodybuilding_action_bw_1788014408431.webp';
 
 interface HeroSectionProps {
   searchTerm: string;
@@ -154,6 +154,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <img
                   src={slide.bgImage}
                   alt={slide.category}
+                  width="1920"
+                  height="1080"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={index === 0 ? "high" : "auto"}
                   className="w-full h-full object-cover object-center lg:object-[68%_14%] opacity-85 sm:opacity-92 filter contrast-110 brightness-95 transform scale-100 transition-all duration-1000"
                 />
               </div>
@@ -296,6 +301,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <img
                   src={activeSlide.cardImage}
                   alt={activeSlide.cardLabel}
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700 filter grayscale contrast-125"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -331,7 +340,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         : 'border-white/10 opacity-50 hover:opacity-100'
                     }`}
                   >
-                    <img src={s.cardImage} alt="" className="w-full h-full object-cover object-center filter grayscale" />
+                    <img 
+                      src={s.cardImage} 
+                      alt={`تصویر اسلاید ${s.category}`} 
+                      width="120" 
+                      height="68" 
+                      loading="lazy" 
+                      decoding="async" 
+                      className="w-full h-full object-cover object-center filter grayscale" 
+                    />
                   </div>
                 ))}
               </div>

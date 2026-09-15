@@ -147,8 +147,11 @@ export const Footer: React.FC<FooterProps> = ({
                 <img
                   src="/logo-compact.png"
                   alt="لوگوی اسپرت من"
+                  width="72"
+                  height="72"
                   className="w-14 h-14 sm:w-18 sm:h-18 object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.3)] group-hover:scale-105 group-hover:drop-shadow-[0_6px_18px_rgba(245,158,11,0.5)] transition-all duration-300"
                   loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                 />
               </div>

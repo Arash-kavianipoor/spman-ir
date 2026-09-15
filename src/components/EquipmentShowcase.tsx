@@ -70,7 +70,10 @@ export const EquipmentShowcase: React.FC<EquipmentShowcaseProps> = ({ items, onS
                 <img
                   src={item.image}
                   alt={item.title}
+                  width="400"
+                  height="300"
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#13151f] via-transparent to-black/40" />

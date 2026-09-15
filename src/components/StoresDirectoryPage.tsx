@@ -669,6 +669,10 @@ export const StoresDirectoryPage: React.FC<StoresDirectoryPageProps> = ({
                             <img
                               src={store.images[0]}
                               alt={store.name}
+                              width="96"
+                              height="96"
+                              loading="lazy"
+                              decoding="async"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                             <span className="absolute bottom-1 right-1 bg-black/80 backdrop-blur-sm text-amber-400 text-[9px] px-1.5 py-0.5 rounded font-mono">

@@ -1,12 +1,32 @@
-# Cloudflare Pages Headers
+# Cloudflare Pages Headers & Cache Optimization
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(self), camera=(), microphone=()
 
-# Cache assets
+# Long-term immutable caching for Vite hashed bundles & assets
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Image assets caching
+/*.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+# Data & JSON caching
 /data/*
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# SEO files caching
+/sitemap.xml
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Cache-Control: public, max-age=86400
+

@@ -38,8 +38,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, activeSection }) => 
               <img
                 src="/logo-compact.png"
                 alt="لوگوی اسپرت من"
+                width="80"
+                height="80"
                 className="w-13 h-13 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:drop-shadow-[0_6px_20px_rgba(245,158,11,0.6)] transition-all duration-300"
                 loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
             </div>

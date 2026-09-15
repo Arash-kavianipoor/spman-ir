@@ -58,8 +58,11 @@ export const AboutUsPage: React.FC<AboutUsPageProps> = ({
               <img
                 src="/logo-full.png"
                 alt="لوگوی رسمی اسپرت من (Sport Man)"
+                width="288"
+                height="288"
                 className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain filter drop-shadow-[0_12px_32px_rgba(245,158,11,0.4)] hover:scale-105 transition-transform duration-300"
                 loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
             </div>
