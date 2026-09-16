@@ -233,7 +233,7 @@ export const StoreCard: React.FC<StoreCardProps> = ({ store, onOpenMap, onOpenDe
 
         {/* Social & Digital Links */}
         <div className="flex items-center justify-between pt-2 border-t border-white/10">
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 scale-90 lg:scale-100 origin-right transition-transform">
             {store.social.whatsapp && (
               <a
                 href={store.social.whatsapp}
@@ -281,7 +281,7 @@ export const StoreCard: React.FC<StoreCardProps> = ({ store, onOpenMap, onOpenDe
           </div>
 
           {/* Action Buttons: Live Google Map & Full Details */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 scale-90 lg:scale-100 origin-left transition-transform">
             <button
               onClick={() => onOpenMap(store)}
               className="w-8 h-8 rounded-xl bg-amber-500/15 hover:bg-amber-500 text-amber-400 hover:text-black border border-amber-500/30 flex items-center justify-center transition-all cursor-pointer"
